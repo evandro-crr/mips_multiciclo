@@ -77,10 +77,34 @@ component bancoRegistradores is
       DadoLido1, DadoLido2: out std_logic_vector(largura-1 downto 0)
    );
 end component;
+
+component extensaoSinal is 
+   generic(
+      larguraOriginal: natural := 8;
+      larguraExtendida: natural := 8);
+   port(
+      entrada: in std_logic_vector(larguraOriginal-1 downto 0);
+      saida: out std_logic_vector(larguraExtendida-1 downto 0)
+   );
+end component;
+
+component deslocadorEsquerda is 
+   generic(largura: natural := 8);
+   port(
+      entrada: in std_logic_vector(largura-1 downto 0);
+      saida: out std_logic_vector(largura-1 downto 0)
+   );
+end component;
 	signal cPC, zero : std_logic;
-	signal sU, D, m2, I, sMem, mPC, sB, sPC, m3, dA, dB, sA, sB : std_logic_vector(31 downto 0);
+	signal sU, D, m2, I, sMem, mPC, sB, sPC, m3, dA, dB, sA, sB, es, esd, mA : std_logic_vector(31 downto 0);
 	signal m1 : std_logic_vector(4 downto 0);
 begin
+	MUXA: multiplexador2x1 	generic map(32)
+									port map (sPC, sA, ULAFonteA, mA);
+	deslocador_Esquerda: deslocadorEsquerda 	generic map (32)
+															port map (es, esd);
+	Extensao_Sinal: ExtensaoSinal generic map(16,32)
+											port map (I(15 downto 0), es);
 	B: registrador generic map (32)
 						port map( clock, reset, '1',dB, sB);
 	A: registrador generic map (32)
