@@ -1,0 +1,32 @@
+----------------------------------------------------------------------------------
+-- Company:   Federal University of Santa Catarina
+-- Engineer:  
+-- 
+-- Create Date:    
+-- Design Name: 
+-- Module Name:    
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity operacaoULA is 
+   port(
+      ULAOp: in std_logic_vector(1 downto 0);
+      Operacao: out std_logic_vector(2 downto 0)
+   );
+end entity;
+
+architecture comportamental of operacaoULA is
+begin
+end architecture;

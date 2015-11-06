@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------
+-- Company:   Federal University of Santa Catarina
+-- Engineer:  Prof. Dr. Eng. Rafael Luiz Cancian
+-- 
+-- Create Date:    
+-- Design Name: 
+-- Module Name:    
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity blocoOperativo is 
+   port(
+      clock, reset: in std_logic;
+      PCEscCond, PCEsc, IouD, LerMem, EscMem, MemParaReg, IREsc, RegDst, EscReg, ULAFonteA: in std_logic;
+      ULAFonteB, ULAOp, FontePC: in std_logic_vector(1 downto 0);
+      opcode: out std_logic_vector(5 downto 0)
+   );
+end entity;
+
+architecture estrutural of blocoOperativo is
+begin
+end architecture;

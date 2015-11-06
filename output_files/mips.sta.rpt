@@ -1,0 +1,900 @@
+TimeQuest Timing Analyzer report for mips
+Fri Nov  6 00:28:38 2015
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; mips                                                              ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++---------------------------------------------------------------+
+; Propagation Delay                                             ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; Operacao[0] ; saida[0]    ; 8.900  ; 8.900  ; 8.900  ; 8.900  ;
+; Operacao[0] ; saida[1]    ; 9.934  ; 9.263  ; 9.263  ; 9.934  ;
+; Operacao[0] ; saida[2]    ; 9.981  ; 9.286  ; 9.286  ; 9.981  ;
+; Operacao[0] ; saida[3]    ; 10.120 ; 9.323  ; 9.323  ; 10.120 ;
+; Operacao[0] ; saida[4]    ; 9.923  ; 8.909  ; 8.909  ; 9.923  ;
+; Operacao[0] ; saida[5]    ; 9.574  ; 8.870  ; 8.870  ; 9.574  ;
+; Operacao[0] ; saida[6]    ; 10.335 ; 9.332  ; 9.332  ; 10.335 ;
+; Operacao[0] ; saida[7]    ; 10.323 ; 9.313  ; 9.313  ; 10.323 ;
+; Operacao[2] ; saida[0]    ; 10.916 ; 10.916 ; 10.916 ; 10.916 ;
+; Operacao[2] ; saida[1]    ; 11.036 ; 11.036 ; 11.036 ; 11.036 ;
+; Operacao[2] ; saida[2]    ; 11.376 ; 11.376 ; 11.376 ; 11.376 ;
+; Operacao[2] ; saida[3]    ; 11.808 ; 11.808 ; 11.808 ; 11.808 ;
+; Operacao[2] ; saida[4]    ; 11.562 ; 11.562 ; 11.562 ; 11.562 ;
+; Operacao[2] ; saida[5]    ; 11.724 ; 11.724 ; 11.724 ; 11.724 ;
+; Operacao[2] ; saida[6]    ; 12.029 ; 12.029 ; 12.029 ; 12.029 ;
+; Operacao[2] ; saida[7]    ; 11.936 ; 11.936 ; 11.936 ; 11.936 ;
+; entradaA[0] ; saida[0]    ; 10.589 ; 11.935 ; 11.935 ; 10.589 ;
+; entradaA[0] ; saida[1]    ; 10.708 ; 10.708 ; 10.708 ; 10.708 ;
+; entradaA[0] ; saida[2]    ; 10.887 ; 10.887 ; 10.887 ; 10.887 ;
+; entradaA[0] ; saida[3]    ; 11.319 ; 11.319 ; 11.319 ; 11.319 ;
+; entradaA[0] ; saida[4]    ; 11.073 ; 11.073 ; 11.073 ; 11.073 ;
+; entradaA[0] ; saida[5]    ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; entradaA[0] ; saida[6]    ; 11.540 ; 11.540 ; 11.540 ; 11.540 ;
+; entradaA[0] ; saida[7]    ; 11.447 ; 11.447 ; 11.447 ; 11.447 ;
+; entradaA[1] ; saida[0]    ;        ; 11.787 ; 11.787 ;        ;
+; entradaA[1] ; saida[1]    ; 10.360 ; 10.354 ; 10.354 ; 10.360 ;
+; entradaA[1] ; saida[2]    ; 10.849 ; 10.849 ; 10.849 ; 10.849 ;
+; entradaA[1] ; saida[3]    ; 11.281 ; 11.281 ; 11.281 ; 11.281 ;
+; entradaA[1] ; saida[4]    ; 11.035 ; 11.035 ; 11.035 ; 11.035 ;
+; entradaA[1] ; saida[5]    ; 11.197 ; 11.197 ; 11.197 ; 11.197 ;
+; entradaA[1] ; saida[6]    ; 11.502 ; 11.502 ; 11.502 ; 11.502 ;
+; entradaA[1] ; saida[7]    ; 11.409 ; 11.409 ; 11.409 ; 11.409 ;
+; entradaA[2] ; saida[0]    ;        ; 11.395 ; 11.395 ;        ;
+; entradaA[2] ; saida[2]    ; 10.083 ; 10.051 ; 10.051 ; 10.083 ;
+; entradaA[2] ; saida[3]    ; 10.799 ; 10.799 ; 10.799 ; 10.799 ;
+; entradaA[2] ; saida[4]    ; 10.553 ; 10.553 ; 10.553 ; 10.553 ;
+; entradaA[2] ; saida[5]    ; 10.715 ; 10.715 ; 10.715 ; 10.715 ;
+; entradaA[2] ; saida[6]    ; 11.020 ; 11.020 ; 11.020 ; 11.020 ;
+; entradaA[2] ; saida[7]    ; 10.927 ; 10.927 ; 10.927 ; 10.927 ;
+; entradaA[3] ; saida[0]    ;        ; 11.132 ; 11.132 ;        ;
+; entradaA[3] ; saida[3]    ; 10.452 ; 10.452 ; 10.452 ; 10.452 ;
+; entradaA[3] ; saida[4]    ; 10.521 ; 10.521 ; 10.521 ; 10.521 ;
+; entradaA[3] ; saida[5]    ; 10.683 ; 10.683 ; 10.683 ; 10.683 ;
+; entradaA[3] ; saida[6]    ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; entradaA[3] ; saida[7]    ; 10.895 ; 10.895 ; 10.895 ; 10.895 ;
+; entradaA[4] ; saida[0]    ;        ; 11.589 ; 11.589 ;        ;
+; entradaA[4] ; saida[4]    ; 10.623 ; 10.623 ; 10.623 ; 10.623 ;
+; entradaA[4] ; saida[5]    ; 11.100 ; 11.100 ; 11.100 ; 11.100 ;
+; entradaA[4] ; saida[6]    ; 11.405 ; 11.405 ; 11.405 ; 11.405 ;
+; entradaA[4] ; saida[7]    ; 11.312 ; 11.312 ; 11.312 ; 11.312 ;
+; entradaA[5] ; saida[0]    ;        ; 11.537 ; 11.537 ;        ;
+; entradaA[5] ; saida[5]    ; 10.517 ; 10.517 ; 10.517 ; 10.517 ;
+; entradaA[5] ; saida[6]    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
+; entradaA[5] ; saida[7]    ; 11.044 ; 11.044 ; 11.044 ; 11.044 ;
+; entradaA[6] ; saida[0]    ;        ; 10.891 ; 10.891 ;        ;
+; entradaA[6] ; saida[6]    ; 10.505 ; 10.505 ; 10.505 ; 10.505 ;
+; entradaA[6] ; saida[7]    ; 10.727 ; 10.727 ; 10.727 ; 10.727 ;
+; entradaA[7] ; saida[0]    ;        ; 10.489 ; 10.489 ;        ;
+; entradaA[7] ; saida[7]    ; 10.100 ; 9.974  ; 9.974  ; 10.100 ;
+; entradaB[0] ; saida[0]    ; 9.287  ; 8.651  ; 8.651  ; 9.287  ;
+; entradaB[0] ; saida[1]    ; 8.771  ; 8.771  ; 8.771  ; 8.771  ;
+; entradaB[0] ; saida[2]    ; 8.950  ; 8.950  ; 8.950  ; 8.950  ;
+; entradaB[0] ; saida[3]    ; 9.382  ; 9.382  ; 9.382  ; 9.382  ;
+; entradaB[0] ; saida[4]    ; 9.136  ; 9.136  ; 9.136  ; 9.136  ;
+; entradaB[0] ; saida[5]    ; 9.298  ; 9.298  ; 9.298  ; 9.298  ;
+; entradaB[0] ; saida[6]    ; 9.603  ; 9.603  ; 9.603  ; 9.603  ;
+; entradaB[0] ; saida[7]    ; 9.510  ; 9.510  ; 9.510  ; 9.510  ;
+; entradaB[1] ; saida[0]    ; 11.829 ;        ;        ; 11.829 ;
+; entradaB[1] ; saida[1]    ; 11.008 ; 11.008 ; 11.008 ; 11.008 ;
+; entradaB[1] ; saida[2]    ; 11.504 ; 11.504 ; 11.504 ; 11.504 ;
+; entradaB[1] ; saida[3]    ; 11.936 ; 11.936 ; 11.936 ; 11.936 ;
+; entradaB[1] ; saida[4]    ; 11.690 ; 11.690 ; 11.690 ; 11.690 ;
+; entradaB[1] ; saida[5]    ; 11.852 ; 11.852 ; 11.852 ; 11.852 ;
+; entradaB[1] ; saida[6]    ; 12.157 ; 12.157 ; 12.157 ; 12.157 ;
+; entradaB[1] ; saida[7]    ; 12.064 ; 12.064 ; 12.064 ; 12.064 ;
+; entradaB[2] ; saida[0]    ; 11.707 ;        ;        ; 11.707 ;
+; entradaB[2] ; saida[2]    ; 10.949 ; 10.949 ; 10.949 ; 10.949 ;
+; entradaB[2] ; saida[3]    ; 11.696 ; 11.696 ; 11.696 ; 11.696 ;
+; entradaB[2] ; saida[4]    ; 11.450 ; 11.450 ; 11.450 ; 11.450 ;
+; entradaB[2] ; saida[5]    ; 11.612 ; 11.612 ; 11.612 ; 11.612 ;
+; entradaB[2] ; saida[6]    ; 11.917 ; 11.917 ; 11.917 ; 11.917 ;
+; entradaB[2] ; saida[7]    ; 11.824 ; 11.824 ; 11.824 ; 11.824 ;
+; entradaB[3] ; saida[0]    ; 11.872 ;        ;        ; 11.872 ;
+; entradaB[3] ; saida[3]    ; 11.406 ; 11.406 ; 11.406 ; 11.406 ;
+; entradaB[3] ; saida[4]    ; 11.472 ; 11.472 ; 11.472 ; 11.472 ;
+; entradaB[3] ; saida[5]    ; 11.634 ; 11.634 ; 11.634 ; 11.634 ;
+; entradaB[3] ; saida[6]    ; 11.939 ; 11.939 ; 11.939 ; 11.939 ;
+; entradaB[3] ; saida[7]    ; 11.846 ; 11.846 ; 11.846 ; 11.846 ;
+; entradaB[4] ; saida[0]    ; 11.380 ;        ;        ; 11.380 ;
+; entradaB[4] ; saida[4]    ; 10.795 ; 10.795 ; 10.795 ; 10.795 ;
+; entradaB[4] ; saida[5]    ; 11.273 ; 11.273 ; 11.273 ; 11.273 ;
+; entradaB[4] ; saida[6]    ; 11.578 ; 11.578 ; 11.578 ; 11.578 ;
+; entradaB[4] ; saida[7]    ; 11.485 ; 11.485 ; 11.485 ; 11.485 ;
+; entradaB[5] ; saida[0]    ; 11.489 ;        ;        ; 11.489 ;
+; entradaB[5] ; saida[5]    ; 10.873 ; 10.873 ; 10.873 ; 10.873 ;
+; entradaB[5] ; saida[6]    ; 11.490 ; 11.490 ; 11.490 ; 11.490 ;
+; entradaB[5] ; saida[7]    ; 11.397 ; 11.397 ; 11.397 ; 11.397 ;
+; entradaB[6] ; saida[0]    ; 11.202 ;        ;        ; 11.202 ;
+; entradaB[6] ; saida[6]    ; 11.268 ; 11.268 ; 11.268 ; 11.268 ;
+; entradaB[6] ; saida[7]    ; 11.491 ; 11.491 ; 11.491 ; 11.491 ;
+; entradaB[7] ; saida[0]    ; 11.124 ;        ;        ; 11.124 ;
+; entradaB[7] ; saida[7]    ; 11.239 ; 11.239 ; 11.239 ; 11.239 ;
++-------------+-------------+--------+--------+--------+--------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; Operacao[0] ; saida[0]    ; 8.900  ; 8.900  ; 8.900  ; 8.900  ;
+; Operacao[0] ; saida[1]    ; 9.934  ; 9.263  ; 9.263  ; 9.934  ;
+; Operacao[0] ; saida[2]    ; 9.981  ; 9.286  ; 9.286  ; 9.981  ;
+; Operacao[0] ; saida[3]    ; 10.120 ; 9.323  ; 9.323  ; 10.120 ;
+; Operacao[0] ; saida[4]    ; 9.923  ; 8.909  ; 8.909  ; 9.923  ;
+; Operacao[0] ; saida[5]    ; 9.574  ; 8.870  ; 8.870  ; 9.574  ;
+; Operacao[0] ; saida[6]    ; 10.335 ; 9.332  ; 9.332  ; 10.335 ;
+; Operacao[0] ; saida[7]    ; 10.323 ; 9.313  ; 9.313  ; 10.323 ;
+; Operacao[2] ; saida[0]    ; 9.843  ; 9.843  ; 9.843  ; 9.843  ;
+; Operacao[2] ; saida[1]    ; 10.583 ; 10.238 ; 10.238 ; 10.583 ;
+; Operacao[2] ; saida[2]    ; 10.762 ; 10.282 ; 10.282 ; 10.762 ;
+; Operacao[2] ; saida[3]    ; 11.037 ; 10.053 ; 10.053 ; 11.037 ;
+; Operacao[2] ; saida[4]    ; 10.948 ; 10.088 ; 10.088 ; 10.948 ;
+; Operacao[2] ; saida[5]    ; 10.768 ; 10.033 ; 10.033 ; 10.768 ;
+; Operacao[2] ; saida[6]    ; 11.327 ; 10.047 ; 10.047 ; 11.327 ;
+; Operacao[2] ; saida[7]    ; 11.208 ; 10.264 ; 10.264 ; 11.208 ;
+; entradaA[0] ; saida[0]    ; 10.370 ; 10.589 ; 10.589 ; 10.370 ;
+; entradaA[0] ; saida[1]    ; 10.708 ; 10.708 ; 10.708 ; 10.708 ;
+; entradaA[0] ; saida[2]    ; 10.887 ; 10.887 ; 10.887 ; 10.887 ;
+; entradaA[0] ; saida[3]    ; 11.319 ; 11.319 ; 11.319 ; 11.319 ;
+; entradaA[0] ; saida[4]    ; 11.073 ; 11.073 ; 11.073 ; 11.073 ;
+; entradaA[0] ; saida[5]    ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; entradaA[0] ; saida[6]    ; 11.540 ; 11.540 ; 11.540 ; 11.540 ;
+; entradaA[0] ; saida[7]    ; 11.447 ; 11.447 ; 11.447 ; 11.447 ;
+; entradaA[1] ; saida[0]    ;        ; 11.787 ; 11.787 ;        ;
+; entradaA[1] ; saida[1]    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
+; entradaA[1] ; saida[2]    ; 10.849 ; 10.849 ; 10.849 ; 10.849 ;
+; entradaA[1] ; saida[3]    ; 11.281 ; 11.281 ; 11.281 ; 11.281 ;
+; entradaA[1] ; saida[4]    ; 11.035 ; 11.035 ; 11.035 ; 11.035 ;
+; entradaA[1] ; saida[5]    ; 11.197 ; 11.197 ; 11.197 ; 11.197 ;
+; entradaA[1] ; saida[6]    ; 11.502 ; 11.502 ; 11.502 ; 11.502 ;
+; entradaA[1] ; saida[7]    ; 11.409 ; 11.409 ; 11.409 ; 11.409 ;
+; entradaA[2] ; saida[0]    ;        ; 11.395 ; 11.395 ;        ;
+; entradaA[2] ; saida[2]    ; 10.051 ; 10.051 ; 10.051 ; 10.051 ;
+; entradaA[2] ; saida[3]    ; 10.799 ; 10.799 ; 10.799 ; 10.799 ;
+; entradaA[2] ; saida[4]    ; 10.553 ; 10.553 ; 10.553 ; 10.553 ;
+; entradaA[2] ; saida[5]    ; 10.715 ; 10.715 ; 10.715 ; 10.715 ;
+; entradaA[2] ; saida[6]    ; 11.020 ; 11.020 ; 11.020 ; 11.020 ;
+; entradaA[2] ; saida[7]    ; 10.927 ; 10.927 ; 10.927 ; 10.927 ;
+; entradaA[3] ; saida[0]    ;        ; 11.132 ; 11.132 ;        ;
+; entradaA[3] ; saida[3]    ; 9.790  ; 10.452 ; 10.452 ; 9.790  ;
+; entradaA[3] ; saida[4]    ; 10.521 ; 10.521 ; 10.521 ; 10.521 ;
+; entradaA[3] ; saida[5]    ; 10.683 ; 10.683 ; 10.683 ; 10.683 ;
+; entradaA[3] ; saida[6]    ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; entradaA[3] ; saida[7]    ; 10.895 ; 10.895 ; 10.895 ; 10.895 ;
+; entradaA[4] ; saida[0]    ;        ; 11.589 ; 11.589 ;        ;
+; entradaA[4] ; saida[4]    ; 10.230 ; 10.623 ; 10.623 ; 10.230 ;
+; entradaA[4] ; saida[5]    ; 11.100 ; 11.100 ; 11.100 ; 11.100 ;
+; entradaA[4] ; saida[6]    ; 11.405 ; 11.405 ; 11.405 ; 11.405 ;
+; entradaA[4] ; saida[7]    ; 11.312 ; 11.312 ; 11.312 ; 11.312 ;
+; entradaA[5] ; saida[0]    ;        ; 11.537 ; 11.537 ;        ;
+; entradaA[5] ; saida[5]    ; 10.354 ; 10.517 ; 10.517 ; 10.354 ;
+; entradaA[5] ; saida[6]    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
+; entradaA[5] ; saida[7]    ; 11.044 ; 11.044 ; 11.044 ; 11.044 ;
+; entradaA[6] ; saida[0]    ;        ; 10.891 ; 10.891 ;        ;
+; entradaA[6] ; saida[6]    ; 10.153 ; 10.505 ; 10.505 ; 10.153 ;
+; entradaA[6] ; saida[7]    ; 10.727 ; 10.727 ; 10.727 ; 10.727 ;
+; entradaA[7] ; saida[0]    ;        ; 10.489 ; 10.489 ;        ;
+; entradaA[7] ; saida[7]    ; 9.974  ; 9.974  ; 9.974  ; 9.974  ;
+; entradaB[0] ; saida[0]    ; 7.579  ; 8.651  ; 8.651  ; 7.579  ;
+; entradaB[0] ; saida[1]    ; 8.771  ; 8.771  ; 8.771  ; 8.771  ;
+; entradaB[0] ; saida[2]    ; 8.950  ; 8.950  ; 8.950  ; 8.950  ;
+; entradaB[0] ; saida[3]    ; 9.382  ; 9.382  ; 9.382  ; 9.382  ;
+; entradaB[0] ; saida[4]    ; 9.136  ; 9.136  ; 9.136  ; 9.136  ;
+; entradaB[0] ; saida[5]    ; 9.298  ; 9.298  ; 9.298  ; 9.298  ;
+; entradaB[0] ; saida[6]    ; 9.603  ; 9.603  ; 9.603  ; 9.603  ;
+; entradaB[0] ; saida[7]    ; 9.510  ; 9.510  ; 9.510  ; 9.510  ;
+; entradaB[1] ; saida[0]    ; 11.829 ;        ;        ; 11.829 ;
+; entradaB[1] ; saida[1]    ; 10.476 ; 11.008 ; 11.008 ; 10.476 ;
+; entradaB[1] ; saida[2]    ; 11.504 ; 11.504 ; 11.504 ; 11.504 ;
+; entradaB[1] ; saida[3]    ; 11.936 ; 11.936 ; 11.936 ; 11.936 ;
+; entradaB[1] ; saida[4]    ; 11.690 ; 11.690 ; 11.690 ; 11.690 ;
+; entradaB[1] ; saida[5]    ; 11.852 ; 11.852 ; 11.852 ; 11.852 ;
+; entradaB[1] ; saida[6]    ; 12.157 ; 12.157 ; 12.157 ; 12.157 ;
+; entradaB[1] ; saida[7]    ; 12.064 ; 12.064 ; 12.064 ; 12.064 ;
+; entradaB[2] ; saida[0]    ; 11.707 ;        ;        ; 11.707 ;
+; entradaB[2] ; saida[2]    ; 10.471 ; 10.949 ; 10.949 ; 10.471 ;
+; entradaB[2] ; saida[3]    ; 11.696 ; 11.696 ; 11.696 ; 11.696 ;
+; entradaB[2] ; saida[4]    ; 11.450 ; 11.450 ; 11.450 ; 11.450 ;
+; entradaB[2] ; saida[5]    ; 11.612 ; 11.612 ; 11.612 ; 11.612 ;
+; entradaB[2] ; saida[6]    ; 11.917 ; 11.917 ; 11.917 ; 11.917 ;
+; entradaB[2] ; saida[7]    ; 11.824 ; 11.824 ; 11.824 ; 11.824 ;
+; entradaB[3] ; saida[0]    ; 11.872 ;        ;        ; 11.872 ;
+; entradaB[3] ; saida[3]    ; 10.188 ; 11.406 ; 11.406 ; 10.188 ;
+; entradaB[3] ; saida[4]    ; 11.472 ; 11.472 ; 11.472 ; 11.472 ;
+; entradaB[3] ; saida[5]    ; 11.634 ; 11.634 ; 11.634 ; 11.634 ;
+; entradaB[3] ; saida[6]    ; 11.939 ; 11.939 ; 11.939 ; 11.939 ;
+; entradaB[3] ; saida[7]    ; 11.846 ; 11.846 ; 11.846 ; 11.846 ;
+; entradaB[4] ; saida[0]    ; 11.380 ;        ;        ; 11.380 ;
+; entradaB[4] ; saida[4]    ; 9.934  ; 10.795 ; 10.795 ; 9.934  ;
+; entradaB[4] ; saida[5]    ; 11.273 ; 11.273 ; 11.273 ; 11.273 ;
+; entradaB[4] ; saida[6]    ; 11.578 ; 11.578 ; 11.578 ; 11.578 ;
+; entradaB[4] ; saida[7]    ; 11.485 ; 11.485 ; 11.485 ; 11.485 ;
+; entradaB[5] ; saida[0]    ; 11.489 ;        ;        ; 11.489 ;
+; entradaB[5] ; saida[5]    ; 9.990  ; 10.873 ; 10.873 ; 9.990  ;
+; entradaB[5] ; saida[6]    ; 11.490 ; 11.490 ; 11.490 ; 11.490 ;
+; entradaB[5] ; saida[7]    ; 11.397 ; 11.397 ; 11.397 ; 11.397 ;
+; entradaB[6] ; saida[0]    ; 11.202 ;        ;        ; 11.202 ;
+; entradaB[6] ; saida[6]    ; 10.529 ; 11.268 ; 11.268 ; 10.529 ;
+; entradaB[6] ; saida[7]    ; 11.491 ; 11.491 ; 11.491 ; 11.491 ;
+; entradaB[7] ; saida[0]    ; 11.124 ;        ;        ; 11.124 ;
+; entradaB[7] ; saida[7]    ; 10.336 ; 11.239 ; 11.239 ; 10.336 ;
++-------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; Operacao[0] ; saida[0]    ; 5.018 ; 5.018 ; 5.018 ; 5.018 ;
+; Operacao[0] ; saida[1]    ; 5.448 ; 5.160 ; 5.160 ; 5.448 ;
+; Operacao[0] ; saida[2]    ; 5.481 ; 5.187 ; 5.187 ; 5.481 ;
+; Operacao[0] ; saida[3]    ; 5.562 ; 5.213 ; 5.213 ; 5.562 ;
+; Operacao[0] ; saida[4]    ; 5.472 ; 5.033 ; 5.033 ; 5.472 ;
+; Operacao[0] ; saida[5]    ; 5.309 ; 5.010 ; 5.010 ; 5.309 ;
+; Operacao[0] ; saida[6]    ; 5.645 ; 5.215 ; 5.215 ; 5.645 ;
+; Operacao[0] ; saida[7]    ; 5.640 ; 5.201 ; 5.201 ; 5.640 ;
+; Operacao[2] ; saida[0]    ; 5.884 ; 5.884 ; 5.884 ; 5.884 ;
+; Operacao[2] ; saida[1]    ; 5.887 ; 5.887 ; 5.887 ; 5.887 ;
+; Operacao[2] ; saida[2]    ; 6.066 ; 6.066 ; 6.066 ; 6.066 ;
+; Operacao[2] ; saida[3]    ; 6.272 ; 6.272 ; 6.272 ; 6.272 ;
+; Operacao[2] ; saida[4]    ; 6.171 ; 6.171 ; 6.171 ; 6.171 ;
+; Operacao[2] ; saida[5]    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
+; Operacao[2] ; saida[6]    ; 6.385 ; 6.385 ; 6.385 ; 6.385 ;
+; Operacao[2] ; saida[7]    ; 6.336 ; 6.336 ; 6.336 ; 6.336 ;
+; entradaA[0] ; saida[0]    ; 5.748 ; 6.349 ; 6.349 ; 5.748 ;
+; entradaA[0] ; saida[1]    ; 5.753 ; 5.753 ; 5.753 ; 5.753 ;
+; entradaA[0] ; saida[2]    ; 5.870 ; 5.870 ; 5.870 ; 5.870 ;
+; entradaA[0] ; saida[3]    ; 6.076 ; 6.076 ; 6.076 ; 6.076 ;
+; entradaA[0] ; saida[4]    ; 5.975 ; 5.975 ; 5.975 ; 5.975 ;
+; entradaA[0] ; saida[5]    ; 6.049 ; 6.049 ; 6.049 ; 6.049 ;
+; entradaA[0] ; saida[6]    ; 6.189 ; 6.189 ; 6.189 ; 6.189 ;
+; entradaA[0] ; saida[7]    ; 6.140 ; 6.140 ; 6.140 ; 6.140 ;
+; entradaA[1] ; saida[0]    ;       ; 6.279 ; 6.279 ;       ;
+; entradaA[1] ; saida[1]    ; 5.650 ; 5.643 ; 5.643 ; 5.650 ;
+; entradaA[1] ; saida[2]    ; 5.859 ; 5.859 ; 5.859 ; 5.859 ;
+; entradaA[1] ; saida[3]    ; 6.065 ; 6.065 ; 6.065 ; 6.065 ;
+; entradaA[1] ; saida[4]    ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; entradaA[1] ; saida[5]    ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
+; entradaA[1] ; saida[6]    ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; entradaA[1] ; saida[7]    ; 6.129 ; 6.129 ; 6.129 ; 6.129 ;
+; entradaA[2] ; saida[0]    ;       ; 6.079 ; 6.079 ;       ;
+; entradaA[2] ; saida[2]    ; 5.518 ; 5.504 ; 5.504 ; 5.518 ;
+; entradaA[2] ; saida[3]    ; 5.813 ; 5.813 ; 5.813 ; 5.813 ;
+; entradaA[2] ; saida[4]    ; 5.712 ; 5.712 ; 5.712 ; 5.712 ;
+; entradaA[2] ; saida[5]    ; 5.786 ; 5.786 ; 5.786 ; 5.786 ;
+; entradaA[2] ; saida[6]    ; 5.926 ; 5.926 ; 5.926 ; 5.926 ;
+; entradaA[2] ; saida[7]    ; 5.877 ; 5.877 ; 5.877 ; 5.877 ;
+; entradaA[3] ; saida[0]    ;       ; 5.973 ; 5.973 ;       ;
+; entradaA[3] ; saida[3]    ; 5.694 ; 5.694 ; 5.694 ; 5.694 ;
+; entradaA[3] ; saida[4]    ; 5.698 ; 5.698 ; 5.698 ; 5.698 ;
+; entradaA[3] ; saida[5]    ; 5.772 ; 5.772 ; 5.772 ; 5.772 ;
+; entradaA[3] ; saida[6]    ; 5.912 ; 5.912 ; 5.912 ; 5.912 ;
+; entradaA[3] ; saida[7]    ; 5.863 ; 5.863 ; 5.863 ; 5.863 ;
+; entradaA[4] ; saida[0]    ;       ; 6.159 ; 6.159 ;       ;
+; entradaA[4] ; saida[4]    ; 5.762 ; 5.762 ; 5.762 ; 5.762 ;
+; entradaA[4] ; saida[5]    ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; entradaA[4] ; saida[6]    ; 6.081 ; 6.081 ; 6.081 ; 6.081 ;
+; entradaA[4] ; saida[7]    ; 6.032 ; 6.032 ; 6.032 ; 6.032 ;
+; entradaA[5] ; saida[0]    ;       ; 6.137 ; 6.137 ;       ;
+; entradaA[5] ; saida[5]    ; 5.723 ; 5.723 ; 5.723 ; 5.723 ;
+; entradaA[5] ; saida[6]    ; 5.968 ; 5.968 ; 5.968 ; 5.968 ;
+; entradaA[5] ; saida[7]    ; 5.919 ; 5.919 ; 5.919 ; 5.919 ;
+; entradaA[6] ; saida[0]    ;       ; 5.869 ; 5.869 ;       ;
+; entradaA[6] ; saida[6]    ; 5.733 ; 5.733 ; 5.733 ; 5.733 ;
+; entradaA[6] ; saida[7]    ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
+; entradaA[7] ; saida[0]    ;       ; 5.692 ; 5.692 ;       ;
+; entradaA[7] ; saida[7]    ; 5.526 ; 5.470 ; 5.470 ; 5.526 ;
+; entradaB[0] ; saida[0]    ; 4.590 ; 4.284 ; 4.284 ; 4.590 ;
+; entradaB[0] ; saida[1]    ; 4.287 ; 4.287 ; 4.287 ; 4.287 ;
+; entradaB[0] ; saida[2]    ; 4.404 ; 4.404 ; 4.404 ; 4.404 ;
+; entradaB[0] ; saida[3]    ; 4.610 ; 4.610 ; 4.610 ; 4.610 ;
+; entradaB[0] ; saida[4]    ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; entradaB[0] ; saida[5]    ; 4.583 ; 4.583 ; 4.583 ; 4.583 ;
+; entradaB[0] ; saida[6]    ; 4.723 ; 4.723 ; 4.723 ; 4.723 ;
+; entradaB[0] ; saida[7]    ; 4.674 ; 4.674 ; 4.674 ; 4.674 ;
+; entradaB[1] ; saida[0]    ; 6.295 ;       ;       ; 6.295 ;
+; entradaB[1] ; saida[1]    ; 5.925 ; 5.925 ; 5.925 ; 5.925 ;
+; entradaB[1] ; saida[2]    ; 6.142 ; 6.142 ; 6.142 ; 6.142 ;
+; entradaB[1] ; saida[3]    ; 6.348 ; 6.348 ; 6.348 ; 6.348 ;
+; entradaB[1] ; saida[4]    ; 6.247 ; 6.247 ; 6.247 ; 6.247 ;
+; entradaB[1] ; saida[5]    ; 6.321 ; 6.321 ; 6.321 ; 6.321 ;
+; entradaB[1] ; saida[6]    ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
+; entradaB[1] ; saida[7]    ; 6.412 ; 6.412 ; 6.412 ; 6.412 ;
+; entradaB[2] ; saida[0]    ; 6.213 ;       ;       ; 6.213 ;
+; entradaB[2] ; saida[2]    ; 5.880 ; 5.880 ; 5.880 ; 5.880 ;
+; entradaB[2] ; saida[3]    ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
+; entradaB[2] ; saida[4]    ; 6.090 ; 6.090 ; 6.090 ; 6.090 ;
+; entradaB[2] ; saida[5]    ; 6.164 ; 6.164 ; 6.164 ; 6.164 ;
+; entradaB[2] ; saida[6]    ; 6.304 ; 6.304 ; 6.304 ; 6.304 ;
+; entradaB[2] ; saida[7]    ; 6.255 ; 6.255 ; 6.255 ; 6.255 ;
+; entradaB[3] ; saida[0]    ; 6.288 ;       ;       ; 6.288 ;
+; entradaB[3] ; saida[3]    ; 6.093 ; 6.093 ; 6.093 ; 6.093 ;
+; entradaB[3] ; saida[4]    ; 6.095 ; 6.095 ; 6.095 ; 6.095 ;
+; entradaB[3] ; saida[5]    ; 6.169 ; 6.169 ; 6.169 ; 6.169 ;
+; entradaB[3] ; saida[6]    ; 6.309 ; 6.309 ; 6.309 ; 6.309 ;
+; entradaB[3] ; saida[7]    ; 6.260 ; 6.260 ; 6.260 ; 6.260 ;
+; entradaB[4] ; saida[0]    ; 6.090 ;       ;       ; 6.090 ;
+; entradaB[4] ; saida[4]    ; 5.861 ; 5.861 ; 5.861 ; 5.861 ;
+; entradaB[4] ; saida[5]    ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
+; entradaB[4] ; saida[6]    ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; entradaB[4] ; saida[7]    ; 6.129 ; 6.129 ; 6.129 ; 6.129 ;
+; entradaB[5] ; saida[0]    ; 6.123 ;       ;       ; 6.123 ;
+; entradaB[5] ; saida[5]    ; 5.878 ; 5.878 ; 5.878 ; 5.878 ;
+; entradaB[5] ; saida[6]    ; 6.121 ; 6.121 ; 6.121 ; 6.121 ;
+; entradaB[5] ; saida[7]    ; 6.072 ; 6.072 ; 6.072 ; 6.072 ;
+; entradaB[6] ; saida[0]    ; 5.970 ;       ;       ; 5.970 ;
+; entradaB[6] ; saida[6]    ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; entradaB[6] ; saida[7]    ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; entradaB[7] ; saida[0]    ; 6.020 ;       ;       ; 6.020 ;
+; entradaB[7] ; saida[7]    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; Operacao[0] ; saida[0]    ; 5.018 ; 5.018 ; 5.018 ; 5.018 ;
+; Operacao[0] ; saida[1]    ; 5.448 ; 5.160 ; 5.160 ; 5.448 ;
+; Operacao[0] ; saida[2]    ; 5.481 ; 5.187 ; 5.187 ; 5.481 ;
+; Operacao[0] ; saida[3]    ; 5.562 ; 5.213 ; 5.213 ; 5.562 ;
+; Operacao[0] ; saida[4]    ; 5.472 ; 5.033 ; 5.033 ; 5.472 ;
+; Operacao[0] ; saida[5]    ; 5.309 ; 5.010 ; 5.010 ; 5.309 ;
+; Operacao[0] ; saida[6]    ; 5.645 ; 5.215 ; 5.215 ; 5.645 ;
+; Operacao[0] ; saida[7]    ; 5.640 ; 5.201 ; 5.201 ; 5.640 ;
+; Operacao[2] ; saida[0]    ; 5.432 ; 5.432 ; 5.432 ; 5.432 ;
+; Operacao[2] ; saida[1]    ; 5.704 ; 5.608 ; 5.608 ; 5.704 ;
+; Operacao[2] ; saida[2]    ; 5.821 ; 5.640 ; 5.640 ; 5.821 ;
+; Operacao[2] ; saida[3]    ; 5.940 ; 5.554 ; 5.554 ; 5.940 ;
+; Operacao[2] ; saida[4]    ; 5.926 ; 5.569 ; 5.569 ; 5.926 ;
+; Operacao[2] ; saida[5]    ; 5.822 ; 5.536 ; 5.536 ; 5.822 ;
+; Operacao[2] ; saida[6]    ; 6.065 ; 5.527 ; 5.527 ; 6.065 ;
+; Operacao[2] ; saida[7]    ; 6.009 ; 5.639 ; 5.639 ; 6.009 ;
+; entradaA[0] ; saida[0]    ; 5.660 ; 5.748 ; 5.748 ; 5.660 ;
+; entradaA[0] ; saida[1]    ; 5.753 ; 5.753 ; 5.753 ; 5.753 ;
+; entradaA[0] ; saida[2]    ; 5.870 ; 5.870 ; 5.870 ; 5.870 ;
+; entradaA[0] ; saida[3]    ; 6.076 ; 6.076 ; 6.076 ; 6.076 ;
+; entradaA[0] ; saida[4]    ; 5.975 ; 5.975 ; 5.975 ; 5.975 ;
+; entradaA[0] ; saida[5]    ; 6.049 ; 6.049 ; 6.049 ; 6.049 ;
+; entradaA[0] ; saida[6]    ; 6.189 ; 6.189 ; 6.189 ; 6.189 ;
+; entradaA[0] ; saida[7]    ; 6.140 ; 6.140 ; 6.140 ; 6.140 ;
+; entradaA[1] ; saida[0]    ;       ; 6.279 ; 6.279 ;       ;
+; entradaA[1] ; saida[1]    ; 5.643 ; 5.643 ; 5.643 ; 5.643 ;
+; entradaA[1] ; saida[2]    ; 5.859 ; 5.859 ; 5.859 ; 5.859 ;
+; entradaA[1] ; saida[3]    ; 6.065 ; 6.065 ; 6.065 ; 6.065 ;
+; entradaA[1] ; saida[4]    ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; entradaA[1] ; saida[5]    ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
+; entradaA[1] ; saida[6]    ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; entradaA[1] ; saida[7]    ; 6.129 ; 6.129 ; 6.129 ; 6.129 ;
+; entradaA[2] ; saida[0]    ;       ; 6.079 ; 6.079 ;       ;
+; entradaA[2] ; saida[2]    ; 5.504 ; 5.504 ; 5.504 ; 5.504 ;
+; entradaA[2] ; saida[3]    ; 5.813 ; 5.813 ; 5.813 ; 5.813 ;
+; entradaA[2] ; saida[4]    ; 5.712 ; 5.712 ; 5.712 ; 5.712 ;
+; entradaA[2] ; saida[5]    ; 5.786 ; 5.786 ; 5.786 ; 5.786 ;
+; entradaA[2] ; saida[6]    ; 5.926 ; 5.926 ; 5.926 ; 5.926 ;
+; entradaA[2] ; saida[7]    ; 5.877 ; 5.877 ; 5.877 ; 5.877 ;
+; entradaA[3] ; saida[0]    ;       ; 5.973 ; 5.973 ;       ;
+; entradaA[3] ; saida[3]    ; 5.423 ; 5.694 ; 5.694 ; 5.423 ;
+; entradaA[3] ; saida[4]    ; 5.698 ; 5.698 ; 5.698 ; 5.698 ;
+; entradaA[3] ; saida[5]    ; 5.772 ; 5.772 ; 5.772 ; 5.772 ;
+; entradaA[3] ; saida[6]    ; 5.912 ; 5.912 ; 5.912 ; 5.912 ;
+; entradaA[3] ; saida[7]    ; 5.863 ; 5.863 ; 5.863 ; 5.863 ;
+; entradaA[4] ; saida[0]    ;       ; 6.159 ; 6.159 ;       ;
+; entradaA[4] ; saida[4]    ; 5.596 ; 5.762 ; 5.762 ; 5.596 ;
+; entradaA[4] ; saida[5]    ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; entradaA[4] ; saida[6]    ; 6.081 ; 6.081 ; 6.081 ; 6.081 ;
+; entradaA[4] ; saida[7]    ; 6.032 ; 6.032 ; 6.032 ; 6.032 ;
+; entradaA[5] ; saida[0]    ;       ; 6.137 ; 6.137 ;       ;
+; entradaA[5] ; saida[5]    ; 5.662 ; 5.723 ; 5.723 ; 5.662 ;
+; entradaA[5] ; saida[6]    ; 5.968 ; 5.968 ; 5.968 ; 5.968 ;
+; entradaA[5] ; saida[7]    ; 5.919 ; 5.919 ; 5.919 ; 5.919 ;
+; entradaA[6] ; saida[0]    ;       ; 5.869 ; 5.869 ;       ;
+; entradaA[6] ; saida[6]    ; 5.576 ; 5.733 ; 5.733 ; 5.576 ;
+; entradaA[6] ; saida[7]    ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
+; entradaA[7] ; saida[0]    ;       ; 5.692 ; 5.692 ;       ;
+; entradaA[7] ; saida[7]    ; 5.470 ; 5.470 ; 5.470 ; 5.470 ;
+; entradaB[0] ; saida[0]    ; 3.834 ; 4.284 ; 4.284 ; 3.834 ;
+; entradaB[0] ; saida[1]    ; 4.287 ; 4.287 ; 4.287 ; 4.287 ;
+; entradaB[0] ; saida[2]    ; 4.404 ; 4.404 ; 4.404 ; 4.404 ;
+; entradaB[0] ; saida[3]    ; 4.610 ; 4.610 ; 4.610 ; 4.610 ;
+; entradaB[0] ; saida[4]    ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; entradaB[0] ; saida[5]    ; 4.583 ; 4.583 ; 4.583 ; 4.583 ;
+; entradaB[0] ; saida[6]    ; 4.723 ; 4.723 ; 4.723 ; 4.723 ;
+; entradaB[0] ; saida[7]    ; 4.674 ; 4.674 ; 4.674 ; 4.674 ;
+; entradaB[1] ; saida[0]    ; 6.295 ;       ;       ; 6.295 ;
+; entradaB[1] ; saida[1]    ; 5.722 ; 5.925 ; 5.925 ; 5.722 ;
+; entradaB[1] ; saida[2]    ; 6.142 ; 6.142 ; 6.142 ; 6.142 ;
+; entradaB[1] ; saida[3]    ; 6.348 ; 6.348 ; 6.348 ; 6.348 ;
+; entradaB[1] ; saida[4]    ; 6.247 ; 6.247 ; 6.247 ; 6.247 ;
+; entradaB[1] ; saida[5]    ; 6.321 ; 6.321 ; 6.321 ; 6.321 ;
+; entradaB[1] ; saida[6]    ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
+; entradaB[1] ; saida[7]    ; 6.412 ; 6.412 ; 6.412 ; 6.412 ;
+; entradaB[2] ; saida[0]    ; 6.213 ;       ;       ; 6.213 ;
+; entradaB[2] ; saida[2]    ; 5.706 ; 5.880 ; 5.880 ; 5.706 ;
+; entradaB[2] ; saida[3]    ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
+; entradaB[2] ; saida[4]    ; 6.090 ; 6.090 ; 6.090 ; 6.090 ;
+; entradaB[2] ; saida[5]    ; 6.164 ; 6.164 ; 6.164 ; 6.164 ;
+; entradaB[2] ; saida[6]    ; 6.304 ; 6.304 ; 6.304 ; 6.304 ;
+; entradaB[2] ; saida[7]    ; 6.255 ; 6.255 ; 6.255 ; 6.255 ;
+; entradaB[3] ; saida[0]    ; 6.288 ;       ;       ; 6.288 ;
+; entradaB[3] ; saida[3]    ; 5.583 ; 6.093 ; 6.093 ; 5.583 ;
+; entradaB[3] ; saida[4]    ; 6.095 ; 6.095 ; 6.095 ; 6.095 ;
+; entradaB[3] ; saida[5]    ; 6.169 ; 6.169 ; 6.169 ; 6.169 ;
+; entradaB[3] ; saida[6]    ; 6.309 ; 6.309 ; 6.309 ; 6.309 ;
+; entradaB[3] ; saida[7]    ; 6.260 ; 6.260 ; 6.260 ; 6.260 ;
+; entradaB[4] ; saida[0]    ; 6.090 ;       ;       ; 6.090 ;
+; entradaB[4] ; saida[4]    ; 5.498 ; 5.861 ; 5.861 ; 5.498 ;
+; entradaB[4] ; saida[5]    ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
+; entradaB[4] ; saida[6]    ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; entradaB[4] ; saida[7]    ; 6.129 ; 6.129 ; 6.129 ; 6.129 ;
+; entradaB[5] ; saida[0]    ; 6.123 ;       ;       ; 6.123 ;
+; entradaB[5] ; saida[5]    ; 5.498 ; 5.878 ; 5.878 ; 5.498 ;
+; entradaB[5] ; saida[6]    ; 6.121 ; 6.121 ; 6.121 ; 6.121 ;
+; entradaB[5] ; saida[7]    ; 6.072 ; 6.072 ; 6.072 ; 6.072 ;
+; entradaB[6] ; saida[0]    ; 5.970 ;       ;       ; 5.970 ;
+; entradaB[6] ; saida[6]    ; 5.722 ; 6.034 ; 6.034 ; 5.722 ;
+; entradaB[6] ; saida[7]    ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; entradaB[7] ; saida[0]    ; 6.020 ;       ;       ; 6.020 ;
+; entradaB[7] ; saida[7]    ; 5.689 ; 6.062 ; 6.062 ; 5.689 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------+
+; Progagation Delay                                             ;
++-------------+-------------+--------+--------+--------+--------+
+; Input Port  ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++-------------+-------------+--------+--------+--------+--------+
+; Operacao[0] ; saida[0]    ; 8.900  ; 8.900  ; 8.900  ; 8.900  ;
+; Operacao[0] ; saida[1]    ; 9.934  ; 9.263  ; 9.263  ; 9.934  ;
+; Operacao[0] ; saida[2]    ; 9.981  ; 9.286  ; 9.286  ; 9.981  ;
+; Operacao[0] ; saida[3]    ; 10.120 ; 9.323  ; 9.323  ; 10.120 ;
+; Operacao[0] ; saida[4]    ; 9.923  ; 8.909  ; 8.909  ; 9.923  ;
+; Operacao[0] ; saida[5]    ; 9.574  ; 8.870  ; 8.870  ; 9.574  ;
+; Operacao[0] ; saida[6]    ; 10.335 ; 9.332  ; 9.332  ; 10.335 ;
+; Operacao[0] ; saida[7]    ; 10.323 ; 9.313  ; 9.313  ; 10.323 ;
+; Operacao[2] ; saida[0]    ; 10.916 ; 10.916 ; 10.916 ; 10.916 ;
+; Operacao[2] ; saida[1]    ; 11.036 ; 11.036 ; 11.036 ; 11.036 ;
+; Operacao[2] ; saida[2]    ; 11.376 ; 11.376 ; 11.376 ; 11.376 ;
+; Operacao[2] ; saida[3]    ; 11.808 ; 11.808 ; 11.808 ; 11.808 ;
+; Operacao[2] ; saida[4]    ; 11.562 ; 11.562 ; 11.562 ; 11.562 ;
+; Operacao[2] ; saida[5]    ; 11.724 ; 11.724 ; 11.724 ; 11.724 ;
+; Operacao[2] ; saida[6]    ; 12.029 ; 12.029 ; 12.029 ; 12.029 ;
+; Operacao[2] ; saida[7]    ; 11.936 ; 11.936 ; 11.936 ; 11.936 ;
+; entradaA[0] ; saida[0]    ; 10.589 ; 11.935 ; 11.935 ; 10.589 ;
+; entradaA[0] ; saida[1]    ; 10.708 ; 10.708 ; 10.708 ; 10.708 ;
+; entradaA[0] ; saida[2]    ; 10.887 ; 10.887 ; 10.887 ; 10.887 ;
+; entradaA[0] ; saida[3]    ; 11.319 ; 11.319 ; 11.319 ; 11.319 ;
+; entradaA[0] ; saida[4]    ; 11.073 ; 11.073 ; 11.073 ; 11.073 ;
+; entradaA[0] ; saida[5]    ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; entradaA[0] ; saida[6]    ; 11.540 ; 11.540 ; 11.540 ; 11.540 ;
+; entradaA[0] ; saida[7]    ; 11.447 ; 11.447 ; 11.447 ; 11.447 ;
+; entradaA[1] ; saida[0]    ;        ; 11.787 ; 11.787 ;        ;
+; entradaA[1] ; saida[1]    ; 10.360 ; 10.354 ; 10.354 ; 10.360 ;
+; entradaA[1] ; saida[2]    ; 10.849 ; 10.849 ; 10.849 ; 10.849 ;
+; entradaA[1] ; saida[3]    ; 11.281 ; 11.281 ; 11.281 ; 11.281 ;
+; entradaA[1] ; saida[4]    ; 11.035 ; 11.035 ; 11.035 ; 11.035 ;
+; entradaA[1] ; saida[5]    ; 11.197 ; 11.197 ; 11.197 ; 11.197 ;
+; entradaA[1] ; saida[6]    ; 11.502 ; 11.502 ; 11.502 ; 11.502 ;
+; entradaA[1] ; saida[7]    ; 11.409 ; 11.409 ; 11.409 ; 11.409 ;
+; entradaA[2] ; saida[0]    ;        ; 11.395 ; 11.395 ;        ;
+; entradaA[2] ; saida[2]    ; 10.083 ; 10.051 ; 10.051 ; 10.083 ;
+; entradaA[2] ; saida[3]    ; 10.799 ; 10.799 ; 10.799 ; 10.799 ;
+; entradaA[2] ; saida[4]    ; 10.553 ; 10.553 ; 10.553 ; 10.553 ;
+; entradaA[2] ; saida[5]    ; 10.715 ; 10.715 ; 10.715 ; 10.715 ;
+; entradaA[2] ; saida[6]    ; 11.020 ; 11.020 ; 11.020 ; 11.020 ;
+; entradaA[2] ; saida[7]    ; 10.927 ; 10.927 ; 10.927 ; 10.927 ;
+; entradaA[3] ; saida[0]    ;        ; 11.132 ; 11.132 ;        ;
+; entradaA[3] ; saida[3]    ; 10.452 ; 10.452 ; 10.452 ; 10.452 ;
+; entradaA[3] ; saida[4]    ; 10.521 ; 10.521 ; 10.521 ; 10.521 ;
+; entradaA[3] ; saida[5]    ; 10.683 ; 10.683 ; 10.683 ; 10.683 ;
+; entradaA[3] ; saida[6]    ; 10.988 ; 10.988 ; 10.988 ; 10.988 ;
+; entradaA[3] ; saida[7]    ; 10.895 ; 10.895 ; 10.895 ; 10.895 ;
+; entradaA[4] ; saida[0]    ;        ; 11.589 ; 11.589 ;        ;
+; entradaA[4] ; saida[4]    ; 10.623 ; 10.623 ; 10.623 ; 10.623 ;
+; entradaA[4] ; saida[5]    ; 11.100 ; 11.100 ; 11.100 ; 11.100 ;
+; entradaA[4] ; saida[6]    ; 11.405 ; 11.405 ; 11.405 ; 11.405 ;
+; entradaA[4] ; saida[7]    ; 11.312 ; 11.312 ; 11.312 ; 11.312 ;
+; entradaA[5] ; saida[0]    ;        ; 11.537 ; 11.537 ;        ;
+; entradaA[5] ; saida[5]    ; 10.517 ; 10.517 ; 10.517 ; 10.517 ;
+; entradaA[5] ; saida[6]    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
+; entradaA[5] ; saida[7]    ; 11.044 ; 11.044 ; 11.044 ; 11.044 ;
+; entradaA[6] ; saida[0]    ;        ; 10.891 ; 10.891 ;        ;
+; entradaA[6] ; saida[6]    ; 10.505 ; 10.505 ; 10.505 ; 10.505 ;
+; entradaA[6] ; saida[7]    ; 10.727 ; 10.727 ; 10.727 ; 10.727 ;
+; entradaA[7] ; saida[0]    ;        ; 10.489 ; 10.489 ;        ;
+; entradaA[7] ; saida[7]    ; 10.100 ; 9.974  ; 9.974  ; 10.100 ;
+; entradaB[0] ; saida[0]    ; 9.287  ; 8.651  ; 8.651  ; 9.287  ;
+; entradaB[0] ; saida[1]    ; 8.771  ; 8.771  ; 8.771  ; 8.771  ;
+; entradaB[0] ; saida[2]    ; 8.950  ; 8.950  ; 8.950  ; 8.950  ;
+; entradaB[0] ; saida[3]    ; 9.382  ; 9.382  ; 9.382  ; 9.382  ;
+; entradaB[0] ; saida[4]    ; 9.136  ; 9.136  ; 9.136  ; 9.136  ;
+; entradaB[0] ; saida[5]    ; 9.298  ; 9.298  ; 9.298  ; 9.298  ;
+; entradaB[0] ; saida[6]    ; 9.603  ; 9.603  ; 9.603  ; 9.603  ;
+; entradaB[0] ; saida[7]    ; 9.510  ; 9.510  ; 9.510  ; 9.510  ;
+; entradaB[1] ; saida[0]    ; 11.829 ;        ;        ; 11.829 ;
+; entradaB[1] ; saida[1]    ; 11.008 ; 11.008 ; 11.008 ; 11.008 ;
+; entradaB[1] ; saida[2]    ; 11.504 ; 11.504 ; 11.504 ; 11.504 ;
+; entradaB[1] ; saida[3]    ; 11.936 ; 11.936 ; 11.936 ; 11.936 ;
+; entradaB[1] ; saida[4]    ; 11.690 ; 11.690 ; 11.690 ; 11.690 ;
+; entradaB[1] ; saida[5]    ; 11.852 ; 11.852 ; 11.852 ; 11.852 ;
+; entradaB[1] ; saida[6]    ; 12.157 ; 12.157 ; 12.157 ; 12.157 ;
+; entradaB[1] ; saida[7]    ; 12.064 ; 12.064 ; 12.064 ; 12.064 ;
+; entradaB[2] ; saida[0]    ; 11.707 ;        ;        ; 11.707 ;
+; entradaB[2] ; saida[2]    ; 10.949 ; 10.949 ; 10.949 ; 10.949 ;
+; entradaB[2] ; saida[3]    ; 11.696 ; 11.696 ; 11.696 ; 11.696 ;
+; entradaB[2] ; saida[4]    ; 11.450 ; 11.450 ; 11.450 ; 11.450 ;
+; entradaB[2] ; saida[5]    ; 11.612 ; 11.612 ; 11.612 ; 11.612 ;
+; entradaB[2] ; saida[6]    ; 11.917 ; 11.917 ; 11.917 ; 11.917 ;
+; entradaB[2] ; saida[7]    ; 11.824 ; 11.824 ; 11.824 ; 11.824 ;
+; entradaB[3] ; saida[0]    ; 11.872 ;        ;        ; 11.872 ;
+; entradaB[3] ; saida[3]    ; 11.406 ; 11.406 ; 11.406 ; 11.406 ;
+; entradaB[3] ; saida[4]    ; 11.472 ; 11.472 ; 11.472 ; 11.472 ;
+; entradaB[3] ; saida[5]    ; 11.634 ; 11.634 ; 11.634 ; 11.634 ;
+; entradaB[3] ; saida[6]    ; 11.939 ; 11.939 ; 11.939 ; 11.939 ;
+; entradaB[3] ; saida[7]    ; 11.846 ; 11.846 ; 11.846 ; 11.846 ;
+; entradaB[4] ; saida[0]    ; 11.380 ;        ;        ; 11.380 ;
+; entradaB[4] ; saida[4]    ; 10.795 ; 10.795 ; 10.795 ; 10.795 ;
+; entradaB[4] ; saida[5]    ; 11.273 ; 11.273 ; 11.273 ; 11.273 ;
+; entradaB[4] ; saida[6]    ; 11.578 ; 11.578 ; 11.578 ; 11.578 ;
+; entradaB[4] ; saida[7]    ; 11.485 ; 11.485 ; 11.485 ; 11.485 ;
+; entradaB[5] ; saida[0]    ; 11.489 ;        ;        ; 11.489 ;
+; entradaB[5] ; saida[5]    ; 10.873 ; 10.873 ; 10.873 ; 10.873 ;
+; entradaB[5] ; saida[6]    ; 11.490 ; 11.490 ; 11.490 ; 11.490 ;
+; entradaB[5] ; saida[7]    ; 11.397 ; 11.397 ; 11.397 ; 11.397 ;
+; entradaB[6] ; saida[0]    ; 11.202 ;        ;        ; 11.202 ;
+; entradaB[6] ; saida[6]    ; 11.268 ; 11.268 ; 11.268 ; 11.268 ;
+; entradaB[6] ; saida[7]    ; 11.491 ; 11.491 ; 11.491 ; 11.491 ;
+; entradaB[7] ; saida[0]    ; 11.124 ;        ;        ; 11.124 ;
+; entradaB[7] ; saida[7]    ; 11.239 ; 11.239 ; 11.239 ; 11.239 ;
++-------------+-------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; Operacao[0] ; saida[0]    ; 5.018 ; 5.018 ; 5.018 ; 5.018 ;
+; Operacao[0] ; saida[1]    ; 5.448 ; 5.160 ; 5.160 ; 5.448 ;
+; Operacao[0] ; saida[2]    ; 5.481 ; 5.187 ; 5.187 ; 5.481 ;
+; Operacao[0] ; saida[3]    ; 5.562 ; 5.213 ; 5.213 ; 5.562 ;
+; Operacao[0] ; saida[4]    ; 5.472 ; 5.033 ; 5.033 ; 5.472 ;
+; Operacao[0] ; saida[5]    ; 5.309 ; 5.010 ; 5.010 ; 5.309 ;
+; Operacao[0] ; saida[6]    ; 5.645 ; 5.215 ; 5.215 ; 5.645 ;
+; Operacao[0] ; saida[7]    ; 5.640 ; 5.201 ; 5.201 ; 5.640 ;
+; Operacao[2] ; saida[0]    ; 5.432 ; 5.432 ; 5.432 ; 5.432 ;
+; Operacao[2] ; saida[1]    ; 5.704 ; 5.608 ; 5.608 ; 5.704 ;
+; Operacao[2] ; saida[2]    ; 5.821 ; 5.640 ; 5.640 ; 5.821 ;
+; Operacao[2] ; saida[3]    ; 5.940 ; 5.554 ; 5.554 ; 5.940 ;
+; Operacao[2] ; saida[4]    ; 5.926 ; 5.569 ; 5.569 ; 5.926 ;
+; Operacao[2] ; saida[5]    ; 5.822 ; 5.536 ; 5.536 ; 5.822 ;
+; Operacao[2] ; saida[6]    ; 6.065 ; 5.527 ; 5.527 ; 6.065 ;
+; Operacao[2] ; saida[7]    ; 6.009 ; 5.639 ; 5.639 ; 6.009 ;
+; entradaA[0] ; saida[0]    ; 5.660 ; 5.748 ; 5.748 ; 5.660 ;
+; entradaA[0] ; saida[1]    ; 5.753 ; 5.753 ; 5.753 ; 5.753 ;
+; entradaA[0] ; saida[2]    ; 5.870 ; 5.870 ; 5.870 ; 5.870 ;
+; entradaA[0] ; saida[3]    ; 6.076 ; 6.076 ; 6.076 ; 6.076 ;
+; entradaA[0] ; saida[4]    ; 5.975 ; 5.975 ; 5.975 ; 5.975 ;
+; entradaA[0] ; saida[5]    ; 6.049 ; 6.049 ; 6.049 ; 6.049 ;
+; entradaA[0] ; saida[6]    ; 6.189 ; 6.189 ; 6.189 ; 6.189 ;
+; entradaA[0] ; saida[7]    ; 6.140 ; 6.140 ; 6.140 ; 6.140 ;
+; entradaA[1] ; saida[0]    ;       ; 6.279 ; 6.279 ;       ;
+; entradaA[1] ; saida[1]    ; 5.643 ; 5.643 ; 5.643 ; 5.643 ;
+; entradaA[1] ; saida[2]    ; 5.859 ; 5.859 ; 5.859 ; 5.859 ;
+; entradaA[1] ; saida[3]    ; 6.065 ; 6.065 ; 6.065 ; 6.065 ;
+; entradaA[1] ; saida[4]    ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; entradaA[1] ; saida[5]    ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
+; entradaA[1] ; saida[6]    ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; entradaA[1] ; saida[7]    ; 6.129 ; 6.129 ; 6.129 ; 6.129 ;
+; entradaA[2] ; saida[0]    ;       ; 6.079 ; 6.079 ;       ;
+; entradaA[2] ; saida[2]    ; 5.504 ; 5.504 ; 5.504 ; 5.504 ;
+; entradaA[2] ; saida[3]    ; 5.813 ; 5.813 ; 5.813 ; 5.813 ;
+; entradaA[2] ; saida[4]    ; 5.712 ; 5.712 ; 5.712 ; 5.712 ;
+; entradaA[2] ; saida[5]    ; 5.786 ; 5.786 ; 5.786 ; 5.786 ;
+; entradaA[2] ; saida[6]    ; 5.926 ; 5.926 ; 5.926 ; 5.926 ;
+; entradaA[2] ; saida[7]    ; 5.877 ; 5.877 ; 5.877 ; 5.877 ;
+; entradaA[3] ; saida[0]    ;       ; 5.973 ; 5.973 ;       ;
+; entradaA[3] ; saida[3]    ; 5.423 ; 5.694 ; 5.694 ; 5.423 ;
+; entradaA[3] ; saida[4]    ; 5.698 ; 5.698 ; 5.698 ; 5.698 ;
+; entradaA[3] ; saida[5]    ; 5.772 ; 5.772 ; 5.772 ; 5.772 ;
+; entradaA[3] ; saida[6]    ; 5.912 ; 5.912 ; 5.912 ; 5.912 ;
+; entradaA[3] ; saida[7]    ; 5.863 ; 5.863 ; 5.863 ; 5.863 ;
+; entradaA[4] ; saida[0]    ;       ; 6.159 ; 6.159 ;       ;
+; entradaA[4] ; saida[4]    ; 5.596 ; 5.762 ; 5.762 ; 5.596 ;
+; entradaA[4] ; saida[5]    ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; entradaA[4] ; saida[6]    ; 6.081 ; 6.081 ; 6.081 ; 6.081 ;
+; entradaA[4] ; saida[7]    ; 6.032 ; 6.032 ; 6.032 ; 6.032 ;
+; entradaA[5] ; saida[0]    ;       ; 6.137 ; 6.137 ;       ;
+; entradaA[5] ; saida[5]    ; 5.662 ; 5.723 ; 5.723 ; 5.662 ;
+; entradaA[5] ; saida[6]    ; 5.968 ; 5.968 ; 5.968 ; 5.968 ;
+; entradaA[5] ; saida[7]    ; 5.919 ; 5.919 ; 5.919 ; 5.919 ;
+; entradaA[6] ; saida[0]    ;       ; 5.869 ; 5.869 ;       ;
+; entradaA[6] ; saida[6]    ; 5.576 ; 5.733 ; 5.733 ; 5.576 ;
+; entradaA[6] ; saida[7]    ; 5.789 ; 5.789 ; 5.789 ; 5.789 ;
+; entradaA[7] ; saida[0]    ;       ; 5.692 ; 5.692 ;       ;
+; entradaA[7] ; saida[7]    ; 5.470 ; 5.470 ; 5.470 ; 5.470 ;
+; entradaB[0] ; saida[0]    ; 3.834 ; 4.284 ; 4.284 ; 3.834 ;
+; entradaB[0] ; saida[1]    ; 4.287 ; 4.287 ; 4.287 ; 4.287 ;
+; entradaB[0] ; saida[2]    ; 4.404 ; 4.404 ; 4.404 ; 4.404 ;
+; entradaB[0] ; saida[3]    ; 4.610 ; 4.610 ; 4.610 ; 4.610 ;
+; entradaB[0] ; saida[4]    ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; entradaB[0] ; saida[5]    ; 4.583 ; 4.583 ; 4.583 ; 4.583 ;
+; entradaB[0] ; saida[6]    ; 4.723 ; 4.723 ; 4.723 ; 4.723 ;
+; entradaB[0] ; saida[7]    ; 4.674 ; 4.674 ; 4.674 ; 4.674 ;
+; entradaB[1] ; saida[0]    ; 6.295 ;       ;       ; 6.295 ;
+; entradaB[1] ; saida[1]    ; 5.722 ; 5.925 ; 5.925 ; 5.722 ;
+; entradaB[1] ; saida[2]    ; 6.142 ; 6.142 ; 6.142 ; 6.142 ;
+; entradaB[1] ; saida[3]    ; 6.348 ; 6.348 ; 6.348 ; 6.348 ;
+; entradaB[1] ; saida[4]    ; 6.247 ; 6.247 ; 6.247 ; 6.247 ;
+; entradaB[1] ; saida[5]    ; 6.321 ; 6.321 ; 6.321 ; 6.321 ;
+; entradaB[1] ; saida[6]    ; 6.461 ; 6.461 ; 6.461 ; 6.461 ;
+; entradaB[1] ; saida[7]    ; 6.412 ; 6.412 ; 6.412 ; 6.412 ;
+; entradaB[2] ; saida[0]    ; 6.213 ;       ;       ; 6.213 ;
+; entradaB[2] ; saida[2]    ; 5.706 ; 5.880 ; 5.880 ; 5.706 ;
+; entradaB[2] ; saida[3]    ; 6.191 ; 6.191 ; 6.191 ; 6.191 ;
+; entradaB[2] ; saida[4]    ; 6.090 ; 6.090 ; 6.090 ; 6.090 ;
+; entradaB[2] ; saida[5]    ; 6.164 ; 6.164 ; 6.164 ; 6.164 ;
+; entradaB[2] ; saida[6]    ; 6.304 ; 6.304 ; 6.304 ; 6.304 ;
+; entradaB[2] ; saida[7]    ; 6.255 ; 6.255 ; 6.255 ; 6.255 ;
+; entradaB[3] ; saida[0]    ; 6.288 ;       ;       ; 6.288 ;
+; entradaB[3] ; saida[3]    ; 5.583 ; 6.093 ; 6.093 ; 5.583 ;
+; entradaB[3] ; saida[4]    ; 6.095 ; 6.095 ; 6.095 ; 6.095 ;
+; entradaB[3] ; saida[5]    ; 6.169 ; 6.169 ; 6.169 ; 6.169 ;
+; entradaB[3] ; saida[6]    ; 6.309 ; 6.309 ; 6.309 ; 6.309 ;
+; entradaB[3] ; saida[7]    ; 6.260 ; 6.260 ; 6.260 ; 6.260 ;
+; entradaB[4] ; saida[0]    ; 6.090 ;       ;       ; 6.090 ;
+; entradaB[4] ; saida[4]    ; 5.498 ; 5.861 ; 5.861 ; 5.498 ;
+; entradaB[4] ; saida[5]    ; 6.038 ; 6.038 ; 6.038 ; 6.038 ;
+; entradaB[4] ; saida[6]    ; 6.178 ; 6.178 ; 6.178 ; 6.178 ;
+; entradaB[4] ; saida[7]    ; 6.129 ; 6.129 ; 6.129 ; 6.129 ;
+; entradaB[5] ; saida[0]    ; 6.123 ;       ;       ; 6.123 ;
+; entradaB[5] ; saida[5]    ; 5.498 ; 5.878 ; 5.878 ; 5.498 ;
+; entradaB[5] ; saida[6]    ; 6.121 ; 6.121 ; 6.121 ; 6.121 ;
+; entradaB[5] ; saida[7]    ; 6.072 ; 6.072 ; 6.072 ; 6.072 ;
+; entradaB[6] ; saida[0]    ; 5.970 ;       ;       ; 5.970 ;
+; entradaB[6] ; saida[6]    ; 5.722 ; 6.034 ; 6.034 ; 5.722 ;
+; entradaB[6] ; saida[7]    ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; entradaB[7] ; saida[0]    ; 6.020 ;       ;       ; 6.020 ;
+; entradaB[7] ; saida[7]    ; 5.689 ; 6.062 ; 6.062 ; 5.689 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 102   ; 102  ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 102   ; 102  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Nov  6 00:28:37 2015
+Info: Command: quartus_sta mips -c mips
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'mips.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 300 megabytes
+    Info: Processing ended: Fri Nov  6 00:28:38 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
