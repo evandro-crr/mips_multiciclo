@@ -33,7 +33,8 @@ component blocoOperativo is
       clock, reset: in std_logic;
       PCEscCond, PCEsc, IouD, LerMem, EscMem, MemParaReg, IREsc, RegDst, EscReg, ULAFonteA: in std_logic;
       ULAFonteB, ULAOp, FontePC: in std_logic_vector(1 downto 0);
-      opcode: out std_logic_vector(5 downto 0)
+      opcode: out std_logic_vector(5 downto 0);
+		saidaMemoria: out std_logic_vector(31 downto 0)
    );
 end component;
 
@@ -56,5 +57,5 @@ begin
 	bloco_Operativo: blocoOperativo port map(clock, reset, PCEscCond, PCEsc,
 														IouD, LerMem, EscMem, MemParaReg,
 														IREsc, RegDst, EscReg, ULAFonteA,
-														ULAFonteB, ULAOp, FontePC, opcode);
+														ULAFonteB, ULAOp, FontePC, opcode, gpio);
 end architecture;

@@ -32,6 +32,11 @@ end entity;
 architecture FSMcomportamental of blocoControle is
 	type state is (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9);
 	signal next_state, actual_state : state;
+	constant lw : 	 std_logic_vector(5 downto 0) := "100011";
+	constant sw : 	 std_logic_vector(5 downto 0) := "101011";
+	constant tipoR : std_logic_vector(5 downto 0) := "000000"; 
+	constant beq : 	 std_logic_vector(5 downto 0) := "000100";
+	constant jump :  std_logic_vector(5 downto 0) := "000010";
 begin
 	process(clock,reset)
 	begin
@@ -48,17 +53,17 @@ begin
 			when s0 => 
 				next_state <= s1;
 			when s1 =>
-				if unsigned(opcode) = 0 then
+				if opcode = tipoR then
 					next_state <= s6;
-				elsif (unsigned(opcode) = 35) or (unsigned(opcode) = 43) then
+				elsif (opcode = lw) or (opcode = sw) then
 					next_state <= s2;
-				elsif unsigned(opcode) = 4 then
+				elsif opcode = beq then
 					next_state <= s8;
-				elsif unsigned(opcode) = 2 then
+				elsif opcode = jump then
 					next_state <= s9;
 				end if;
 			when s2 =>
-				if unsigned(opcode) = 35 then
+				if opcode = lw then
 					next_state <= s3;
 				else 
 					next_state <= s5;

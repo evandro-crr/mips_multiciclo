@@ -30,6 +30,5 @@ end entity;
 
 architecture comportamental of deslocadorEsquerda is
 begin
-	saida(largura-1 downto 2) <= entrada(largura-3 downto 0);
-	saida(1 downto 0) <= "00";
+	saida <= entrada(largura-3 downto 0) & "00";
 end architecture;

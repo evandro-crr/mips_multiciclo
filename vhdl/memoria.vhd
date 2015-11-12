@@ -37,27 +37,18 @@ entity memoria is
 end entity;
 
 architecture comportamental of memoria is
-	type memoria is array(0 to 2**bitsEndereco-1) of std_logic_vector(larguraDado-1 downto 0);
-	signal next_state, actual_state : memoria;
+component memoriaFPGA
+	PORT
+	(
+		address		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+		clock		: IN STD_LOGIC  := '1';
+		data		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+		wren		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
+	);
+end component;
 begin
-	process(clock,reset)
-	begin
-		if reset = '1' then
-			clean: for i in actual_state'range loop
-				actual_state(i) <= (others => '0');
-			end loop clean;
-		elsif rising_edge(clock) then
-			actual_state <= next_state;
-		end if;
-	end process;
-	
-	process(EscMem,Endereco,DadoSerEscrito)
-	begin
-		next_state <= actual_state;
-		if escMem = '1' then
-			next_state(to_integer(unsigned(Endereco))) <= DadoSerEscrito;
-		end if;
-	end process;
-	
-	DadoMem <= actual_state(to_integer(unsigned(Endereco)));
+	memoria_1: for i in 0 to 3 generate
+		memoria_i: memoriaFPGA port map(Endereco(11 downto 2)&std_logic_vector(to_unsigned(i,2)), clock, DadoSerEscrito(8*(i+1)-1 downto 8*i), EscMem, DadoMem(8*(i+1)-1 downto 8*i));
+	end generate memoria_1;
 end architecture;

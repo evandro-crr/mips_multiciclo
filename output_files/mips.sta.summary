@@ -2,4 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow Model Setup 'clock'
+Slack : -6.386
+TNS   : -6690.246
+
+Type  : Slow Model Setup 'blocoControle:bloco_Controle|actual_state.s1'
+Slack : -1.355
+TNS   : -3.033
+
+Type  : Slow Model Hold 'blocoControle:bloco_Controle|actual_state.s1'
+Slack : -0.791
+TNS   : -2.090
+
+Type  : Slow Model Hold 'clock'
+Slack : -0.371
+TNS   : -1.458
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -2.000
+TNS   : -3019.380
+
+Type  : Slow Model Minimum Pulse Width 'blocoControle:bloco_Controle|actual_state.s1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -2.387
+TNS   : -2350.685
+
+Type  : Fast Model Setup 'blocoControle:bloco_Controle|actual_state.s1'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Fast Model Hold 'clock'
+Slack : -0.637
+TNS   : -16.641
+
+Type  : Fast Model Hold 'blocoControle:bloco_Controle|actual_state.s1'
+Slack : -0.198
+TNS   : -0.459
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -2.000
+TNS   : -3019.380
+
+Type  : Fast Model Minimum Pulse Width 'blocoControle:bloco_Controle|actual_state.s1'
+Slack : 0.500
+TNS   : 0.000
+
 ------------------------------------------------------------
