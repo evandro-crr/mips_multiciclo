@@ -30,7 +30,7 @@ entity memoria is
    port(
       clock, reset: in std_logic;
       EscMem: in std_logic;
-      Endereco: in std_logic_vector(2**bitsEndereco-1 downto 0);
+      Endereco: in std_logic_vector(bitsEndereco-1 downto 0);
       DadoSerEscrito: in std_logic_vector(larguraDado-1 downto 0);
       DadoMem: out std_logic_vector(larguraDado-1 downto 0)
    );
@@ -51,13 +51,13 @@ begin
 		end if;
 	end process;
 	
-	process(EscMem,endereco,DadoSerEscrito)
+	process(EscMem,Endereco,DadoSerEscrito)
 	begin
 		next_state <= actual_state;
 		if escMem = '1' then
-			next_state(to_integer(unsigned(endereco))) <= DadoSerEscrito;
+			next_state(to_integer(unsigned(Endereco))) <= DadoSerEscrito;
 		end if;
 	end process;
 	
-	DadoMem <= actual_state(to_integer(unsigned(endereco)));
+	DadoMem <= actual_state(to_integer(unsigned(Endereco)));
 end architecture;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips
-Fri Nov  6 00:31:12 2015
+Thu Nov 12 14:22:53 2015
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,11 +13,35 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |ula
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. State Machine - |mipsMulticiclo|blocoControle:bloco_Controle|actual_state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3
+ 13. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:ULAsaida
+ 14. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|ula:ULA1
+ 15. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_SinalPC
+ 16. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB
+ 17. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXA
+ 18. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|deslocadorEsquerda:deslocador_Esquerda
+ 19. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_Sinal
+ 20. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:B
+ 21. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:A
+ 22. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|bancoRegistradores:REG
+ 23. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX2
+ 24. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX1
+ 25. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RDM
+ 26. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RI
+ 27. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem
+ 28. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXPC
+ 29. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:PC
+ 30. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:RDM"
+ 31. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:A"
+ 32. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:B"
+ 33. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB"
+ 34. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:ULAsaida"
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +67,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov  6 00:31:12 2015           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 12 14:22:53 2015           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mips                                            ;
-; Top-level Entity Name              ; ula                                             ;
+; Top-level Entity Name              ; mipsMulticiclo                                  ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 41                                              ;
-;     Total combinational functions  ; 41                                              ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 28                                              ;
+; Total pins                         ; 34                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -66,7 +90,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; ula                ; mips               ;
+; Top-level entity name                                                      ; mipsMulticiclo     ; mips               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,43 +180,49 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                     ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
-; vhdl/ula.vhd                     ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/ula.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; vhdl/ula.vhd                     ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/ula.vhd                ;         ;
+; vhdl/registrador.vhd             ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/registrador.vhd        ;         ;
+; vhdl/operacaoULA.vhd             ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/operacaoULA.vhd        ;         ;
+; vhdl/multiplexador4x1.vhd        ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/multiplexador4x1.vhd   ;         ;
+; vhdl/multiplexador2x1.vhd        ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/multiplexador2x1.vhd   ;         ;
+; vhdl/mipsMulticiclo.vhd          ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/mipsMulticiclo.vhd     ;         ;
+; vhdl/memoria.vhd                 ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/memoria.vhd            ;         ;
+; vhdl/extensaoSinal.vhd           ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/extensaoSinal.vhd      ;         ;
+; vhdl/deslocadorEsquerda.vhd      ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/deslocadorEsquerda.vhd ;         ;
+; vhdl/blocoOperativo.vhd          ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/blocoOperativo.vhd     ;         ;
+; vhdl/blocoControle.vhd           ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/blocoControle.vhd      ;         ;
+; vhdl/bancoRegistradores.vhd      ; yes             ; User VHDL File  ; /home/evandro/workspace/mips/vhdl/bancoRegistradores.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 41          ;
-;                                             ;             ;
-; Total combinational functions               ; 41          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 8           ;
-;     -- 3 input functions                    ; 22          ;
-;     -- <=2 input functions                  ; 11          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 26          ;
-;     -- arithmetic mode                      ; 15          ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 28          ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-; Maximum fan-out node                        ; Operacao[2] ;
-; Maximum fan-out                             ; 17          ;
-; Total fan-out                               ; 128         ;
-; Average fan-out                             ; 1.86        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 34    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -200,9 +230,58 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |ula                       ; 41 (41)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |ula                ; work         ;
+; |mipsMulticiclo            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |mipsMulticiclo     ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |mipsMulticiclo|blocoControle:bloco_Controle|actual_state                                                                                                                           ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+; Name            ; actual_state.s9 ; actual_state.s8 ; actual_state.s7 ; actual_state.s6 ; actual_state.s5 ; actual_state.s4 ; actual_state.s3 ; actual_state.s2 ; actual_state.s1 ; actual_state.s0 ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+; actual_state.s0 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ;
+; actual_state.s1 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 1               ;
+; actual_state.s2 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 1               ;
+; actual_state.s3 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 1               ;
+; actual_state.s4 ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 1               ;
+; actual_state.s5 ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; actual_state.s6 ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; actual_state.s7 ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; actual_state.s8 ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; actual_state.s9 ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                          ;
++--------------------------------------------------------------------+----------------------------------------+
+; Register name                                                      ; Reason for Removal                     ;
++--------------------------------------------------------------------+----------------------------------------+
+; blocoOperativo:bloco_Operativo|registrador:RI|actual_state[26..31] ; Stuck at GND due to stuck port data_in ;
+; blocoControle:bloco_Controle|actual_state.s2                       ; Lost fanout                            ;
+; blocoControle:bloco_Controle|actual_state.s3                       ; Lost fanout                            ;
+; blocoControle:bloco_Controle|actual_state.s4                       ; Stuck at GND due to stuck port data_in ;
+; blocoControle:bloco_Controle|actual_state.s5                       ; Stuck at GND due to stuck port data_in ;
+; blocoControle:bloco_Controle|actual_state.s8                       ; Stuck at GND due to stuck port data_in ;
+; blocoControle:bloco_Controle|actual_state.s9                       ; Stuck at GND due to stuck port data_in ;
+; blocoControle:bloco_Controle|actual_state.s0                       ; Lost fanout                            ;
+; blocoControle:bloco_Controle|actual_state.s1                       ; Lost fanout                            ;
+; blocoControle:bloco_Controle|actual_state.s6                       ; Lost fanout                            ;
+; blocoControle:bloco_Controle|actual_state.s7                       ; Lost fanout                            ;
+; Total Number of Removed Registers = 16                             ;                                        ;
++--------------------------------------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                             ;
++----------------------------------------------+---------------------------+----------------------------------------------+
+; Register name                                ; Reason for Removal        ; Registers Removed due to This Register       ;
++----------------------------------------------+---------------------------+----------------------------------------------+
+; blocoControle:bloco_Controle|actual_state.s4 ; Stuck at GND              ; blocoControle:bloco_Controle|actual_state.s7 ;
+;                                              ; due to stuck port data_in ;                                              ;
++----------------------------------------------+---------------------------+----------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -220,23 +299,236 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |ula|saida                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ula ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; largura        ; 8     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:ULAsaida ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|ula:ULA1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_SinalPC ;
++------------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                                            ;
++------------------+-------+---------------------------------------------------------------------------------+
+; larguraoriginal  ; 26    ; Signed Integer                                                                  ;
+; larguraextendida ; 28    ; Signed Integer                                                                  ;
++------------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXA ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|deslocadorEsquerda:deslocador_Esquerda ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_Sinal ;
++------------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                                          ;
++------------------+-------+-------------------------------------------------------------------------------+
+; larguraoriginal  ; 16    ; Signed Integer                                                                ;
+; larguraextendida ; 32    ; Signed Integer                                                                ;
++------------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:B ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:A ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|bancoRegistradores:REG ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                            ;
+; bitsregserlido ; 5     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX2 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX1 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; largura        ; 5     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RDM ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RI ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; larguramemoria ; 32    ; Signed Integer                                                 ;
+; larguradado    ; 32    ; Signed Integer                                                 ;
+; bitsendereco   ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXPC ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:PC ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; largura        ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:RDM" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:A" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:B" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB" ;
++-----------------+-------+----------+---------------------------------------------+
+; Port            ; Type  ; Severity ; Details                                     ;
++-----------------+-------+----------+---------------------------------------------+
+; entrada1[31..3] ; Input ; Info     ; Stuck at GND                                ;
+; entrada1[1..0]  ; Input ; Info     ; Stuck at GND                                ;
+; entrada1[2]     ; Input ; Info     ; Stuck at VCC                                ;
++-----------------+-------+----------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:ULAsaida" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                          ;
++------+-------+----------+-------------------------------------------------------+
 
 
 +-------------------------------+
@@ -254,7 +546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov  6 00:31:10 2015
+    Info: Processing started: Thu Nov 12 14:22:47 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file vhdl/ula.vhd
@@ -296,22 +588,93 @@ Info (12021): Found 2 design units, including 1 entities, in source file vhdl/bl
 Info (12021): Found 2 design units, including 1 entities, in source file vhdl/bancoRegistradores.vhd
     Info (12022): Found design unit 1: bancoRegistradores-comportamental
     Info (12023): Found entity 1: bancoRegistradores
-Info (12127): Elaborating entity "ula" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at ula.vhd(30): used implicit default value for signal "zero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "zero" is stuck at GND
+Info (12127): Elaborating entity "mipsMulticiclo" for the top level hierarchy
+Info (12128): Elaborating entity "blocoControle" for hierarchy "blocoControle:bloco_Controle"
+Warning (10492): VHDL Process Statement warning at blocoControle.vhd(47): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at blocoControle.vhd(45): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at blocoControle.vhd(98): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (10041): Inferred latch for "next_state.s9" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s8" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s7" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s6" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s5" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s4" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s3" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s2" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s1" at blocoControle.vhd(45)
+Info (10041): Inferred latch for "next_state.s0" at blocoControle.vhd(45)
+Info (12128): Elaborating entity "blocoOperativo" for hierarchy "blocoOperativo:bloco_Operativo"
+Info (12128): Elaborating entity "multiplexador4x1" for hierarchy "blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3"
+Info (12128): Elaborating entity "registrador" for hierarchy "blocoOperativo:bloco_Operativo|registrador:ULAsaida"
+Warning (10492): VHDL Process Statement warning at registrador.vhd(47): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "operacaoULA" for hierarchy "blocoOperativo:bloco_Operativo|operacaoULA:operacao_ULA"
+Info (12128): Elaborating entity "ula" for hierarchy "blocoOperativo:bloco_Operativo|ula:ULA1"
+Info (12128): Elaborating entity "extensaoSinal" for hierarchy "blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_SinalPC"
+Info (12128): Elaborating entity "multiplexador2x1" for hierarchy "blocoOperativo:bloco_Operativo|multiplexador2x1:MUXA"
+Info (12128): Elaborating entity "deslocadorEsquerda" for hierarchy "blocoOperativo:bloco_Operativo|deslocadorEsquerda:deslocador_Esquerda"
+Info (12128): Elaborating entity "extensaoSinal" for hierarchy "blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_Sinal"
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "blocoOperativo:bloco_Operativo|bancoRegistradores:REG"
+Warning (10492): VHDL Process Statement warning at bancoRegistradores.vhd(55): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "multiplexador2x1" for hierarchy "blocoOperativo:bloco_Operativo|multiplexador2x1:MUX1"
+Info (12128): Elaborating entity "memoria" for hierarchy "blocoOperativo:bloco_Operativo|memoria:Mem"
+Warning (10639): VHDL warning at memoria.vhd(40): constant value overflow
+Warning (10445): VHDL Subtype or Type Declaration warning at memoria.vhd(40): subtype or type has null range
+Warning (10296): VHDL warning at memoria.vhd(50): ignored assignment of value to null range
+Warning (10492): VHDL Process Statement warning at memoria.vhd(56): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10296): VHDL warning at memoria.vhd(56): ignored assignment of value to null range
+Warning (10873): Using initial value X (don't care) for net "DadoMem" at memoria.vhd(35)
+Warning (14026): LATCH primitive "blocoControle:bloco_Controle|next_state.s5_290" is permanently enabled
+Warning (14026): LATCH primitive "blocoControle:bloco_Controle|next_state.s7_263" is permanently enabled
+Warning (14026): LATCH primitive "blocoControle:bloco_Controle|next_state.s1_347" is permanently enabled
+Warning (14026): LATCH primitive "blocoControle:bloco_Controle|next_state.s0_362" is permanently enabled
+Warning (14026): LATCH primitive "blocoControle:bloco_Controle|next_state.s4_305" is permanently enabled
+Warning (13039): The following bidir pins have no drivers
+    Warning (13040): Bidir "gpio[0]" has no driver
+    Warning (13040): Bidir "gpio[1]" has no driver
+    Warning (13040): Bidir "gpio[2]" has no driver
+    Warning (13040): Bidir "gpio[3]" has no driver
+    Warning (13040): Bidir "gpio[4]" has no driver
+    Warning (13040): Bidir "gpio[5]" has no driver
+    Warning (13040): Bidir "gpio[6]" has no driver
+    Warning (13040): Bidir "gpio[7]" has no driver
+    Warning (13040): Bidir "gpio[8]" has no driver
+    Warning (13040): Bidir "gpio[9]" has no driver
+    Warning (13040): Bidir "gpio[10]" has no driver
+    Warning (13040): Bidir "gpio[11]" has no driver
+    Warning (13040): Bidir "gpio[12]" has no driver
+    Warning (13040): Bidir "gpio[13]" has no driver
+    Warning (13040): Bidir "gpio[14]" has no driver
+    Warning (13040): Bidir "gpio[15]" has no driver
+    Warning (13040): Bidir "gpio[16]" has no driver
+    Warning (13040): Bidir "gpio[17]" has no driver
+    Warning (13040): Bidir "gpio[18]" has no driver
+    Warning (13040): Bidir "gpio[19]" has no driver
+    Warning (13040): Bidir "gpio[20]" has no driver
+    Warning (13040): Bidir "gpio[21]" has no driver
+    Warning (13040): Bidir "gpio[22]" has no driver
+    Warning (13040): Bidir "gpio[23]" has no driver
+    Warning (13040): Bidir "gpio[24]" has no driver
+    Warning (13040): Bidir "gpio[25]" has no driver
+    Warning (13040): Bidir "gpio[26]" has no driver
+    Warning (13040): Bidir "gpio[27]" has no driver
+    Warning (13040): Bidir "gpio[28]" has no driver
+    Warning (13040): Bidir "gpio[29]" has no driver
+    Warning (13040): Bidir "gpio[30]" has no driver
+    Warning (13040): Bidir "gpio[31]" has no driver
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Operacao[1]"
-Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 41 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 361 megabytes
-    Info: Processing ended: Fri Nov  6 00:31:12 2015
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock"
+    Warning (15610): No output dependent on input pin "reset"
+Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+    Info (21060): Implemented 32 bidirectional pins
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 373 megabytes
+    Info: Processing ended: Thu Nov 12 14:22:53 2015
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
 
 

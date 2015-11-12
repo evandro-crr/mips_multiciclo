@@ -44,5 +44,7 @@ begin
 					orAnd;
 	saida <=	sltOrAnd when Operacao(0) = '1' else
 				addSub;
+	zero <= 	'1' when unsigned(entradaA) = unsigned(entradaB) else
+				'0';
 				
 end architecture;

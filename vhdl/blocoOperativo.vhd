@@ -19,13 +19,14 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity blocoOperativo is 
    port(
       clock, reset: in std_logic;
       PCEscCond, PCEsc, IouD, LerMem, EscMem, MemParaReg, IREsc, RegDst, EscReg, ULAFonteA: in std_logic;
       ULAFonteB, ULAOp, FontePC: in std_logic_vector(1 downto 0);
-      opcode: out std_logic_vector(5 downto 0)
+		opcode: out std_logic_vector(5 downto 0)
    );
 end entity;
 
@@ -58,7 +59,7 @@ component memoria is
    port(
       clock, reset: in std_logic;
       EscMem: in std_logic;
-      Endereco: in std_logic_vector(2**bitsEndereco-1 downto 0);
+      Endereco: in std_logic_vector(bitsEndereco-1 downto 0);
       DadoSerEscrito: in std_logic_vector(larguraDado-1 downto 0);
       DadoMem: out std_logic_vector(larguraDado-1 downto 0)
    );
@@ -95,10 +96,54 @@ component deslocadorEsquerda is
       saida: out std_logic_vector(largura-1 downto 0)
    );
 end component;
+
+component multiplexador4x1 is 
+   generic(largura: natural := 8);
+   port(
+      entrada0, entrada1, entrada2, entrada3: in std_logic_vector(largura-1 downto 0);
+      selecao: in std_logic_vector(1 downto 0);
+      saida: out std_logic_vector(largura-1 downto 0)
+   );
+end component;
+
+component ula is 
+   generic(largura: natural := 8);
+   port(
+      entradaA, entradaB: in std_logic_vector(largura-1 downto 0);
+      Operacao: in std_logic_vector(2 downto 0);
+      saida: out std_logic_vector(largura-1 downto 0);
+      zero: out std_logic
+   );
+end component;
+
+component operacaoULA is 
+   port(
+		funct: in std_logic_vector(5 downto 0);
+      ULAOp: in std_logic_vector(1 downto 0);
+      Operacao: out std_logic_vector(2 downto 0)
+   );
+end component;
 	signal cPC, zero : std_logic;
-	signal sU, D, m2, I, sMem, mPC, sB, sPC, m3, dA, dB, sA, sB, es, esd, mA : std_logic_vector(31 downto 0);
+	signal sU, D, m2, I, sMem, mPC, sB, sPC, m3, dA, dB, sA, es, esd, mA, mB, ej, resultado : std_logic_vector(31 downto 0);
+	signal ej2 : std_logic_vector(27 downto 0);
 	signal m1 : std_logic_vector(4 downto 0);
+	signal cULA : std_logic_vector(2 downto 0);
 begin
+	opcode <= I(31 downto 26);
+	MUX3: multiplexador4x1 	generic map (32)
+									port map(resultado, sU, ej, ej, FontePC, m3);
+									
+	ULAsaida: registrador 	generic map (32)
+									port map (clock, reset, '1', resultado, sU);
+	operacao_ULA: operacaoULA port map (I(5 downto 0), ULAOp, cULA);
+	ULA1: ula 	generic map (32)
+					port map (mA, mB, cULA, resultado, zero);
+	ej(31 downto 28) <= sPC(31 downto 28);
+	ej(27 downto 0) <= ej2;
+	Extensao_SinalPC: ExtensaoSinal 	generic map (26,28)
+												port map (I(25 downto 0), ej2);
+	MUXB: multiplexador4x1 	generic map (32)
+									port map (sB, std_logic_vector(to_unsigned(4,sB'length)), es, esd, ULAFonteB, mB);
 	MUXA: multiplexador2x1 	generic map(32)
 									port map (sPC, sA, ULAFonteA, mA);
 	deslocador_Esquerda: deslocadorEsquerda 	generic map (32)

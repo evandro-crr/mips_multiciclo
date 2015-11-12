@@ -1,0 +1,13 @@
+
+State Machine - |mipsMulticiclo|blocoControle:bloco_Controle|actual_state
+Name actual_state.s9 actual_state.s8 actual_state.s7 actual_state.s6 actual_state.s5 actual_state.s4 actual_state.s3 actual_state.s2 actual_state.s1 actual_state.s0 
+actual_state.s0 0 0 0 0 0 0 0 0 0 0 
+actual_state.s1 0 0 0 0 0 0 0 0 1 1 
+actual_state.s2 0 0 0 0 0 0 0 1 0 1 
+actual_state.s3 0 0 0 0 0 0 1 0 0 1 
+actual_state.s4 0 0 0 0 0 1 0 0 0 1 
+actual_state.s5 0 0 0 0 1 0 0 0 0 1 
+actual_state.s6 0 0 0 1 0 0 0 0 0 1 
+actual_state.s7 0 0 1 0 0 0 0 0 0 1 
+actual_state.s8 0 1 0 0 0 0 0 0 0 1 
+actual_state.s9 1 0 0 0 0 0 0 0 0 1 

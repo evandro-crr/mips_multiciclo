@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity bancoRegistradores is 
    generic(
@@ -35,5 +36,29 @@ entity bancoRegistradores is
 end entity;
 
 architecture comportamental of bancoRegistradores is
+	type registrador is array(0 to 2**bitsRegSerLido-1) of std_logic_vector(largura-1 downto 0);
+	signal actual_state, next_state : registrador;
 begin
+	process(clock,reset)
+	begin
+		if reset = '1' then
+			clear: for i in actual_state'range loop
+				actual_state(i) <= (others => '0');
+			end loop clear;
+		elsif rising_edge(clock) then
+			actual_state <= next_state;
+		end if;
+	end process;
+	
+	process(EscReg, DadoEscrita, RegSerEscrito)
+	begin
+		next_state <= actual_state;
+		if EscReg = '1' then
+			next_state(to_integer(unsigned(RegSerEscrito))) <= DadoEscrita;
+		end if;
+	end process;
+	
+	DadoLido1 <= actual_state(to_integer(unsigned(RegSerLido1)));
+	DadoLido2 <= actual_state(to_integer(unsigned(RegSerLido2)));
+	
 end architecture;
