@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips
-Thu Nov 12 16:13:34 2015
+Fri Nov 20 20:01:21 2015
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,47 +16,46 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. State Machine - |mipsMulticiclo|blocoControle:bloco_Controle|actual_state
- 11. User-Specified and Inferred Latches
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
- 15. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
- 16. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
- 17. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
- 18. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3
- 19. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:ULAsaida
- 20. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|ula:ULA1
- 21. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_SinalPC
- 22. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB
- 23. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXA
- 24. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|deslocadorEsquerda:deslocador_Esquerda
- 25. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_Sinal
- 26. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:B
- 27. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:A
- 28. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|bancoRegistradores:REG
- 29. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX2
- 30. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX1
- 31. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RDM
- 32. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RI
- 33. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem
- 34. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i|altsyncram:altsyncram_component
- 35. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i|altsyncram:altsyncram_component
- 36. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i|altsyncram:altsyncram_component
- 37. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i|altsyncram:altsyncram_component
- 38. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXPC
- 39. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:PC
- 40. altsyncram Parameter Settings by Entity Instance
- 41. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i"
- 42. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i"
- 43. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i"
- 44. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i"
- 45. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:RDM"
- 46. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:A"
- 47. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:B"
- 48. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB"
- 49. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:ULAsaida"
- 50. Elapsed Time Per Partition
- 51. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
+ 14. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
+ 15. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
+ 16. Source assignments for blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i|altsyncram:altsyncram_component|altsyncram_hua1:auto_generated
+ 17. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3
+ 18. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:ULAsaida
+ 19. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|ula:ULA1
+ 20. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_SinalPC
+ 21. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB
+ 22. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXA
+ 23. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|deslocadorEsquerda:deslocador_Esquerda
+ 24. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|extensaoSinal:Extensao_Sinal
+ 25. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:B
+ 26. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:A
+ 27. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|bancoRegistradores:REG
+ 28. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX2
+ 29. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUX1
+ 30. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RDM
+ 31. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:RI
+ 32. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem
+ 33. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i|altsyncram:altsyncram_component
+ 34. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i|altsyncram:altsyncram_component
+ 35. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i|altsyncram:altsyncram_component
+ 36. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i|altsyncram:altsyncram_component
+ 37. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|multiplexador2x1:MUXPC
+ 38. Parameter Settings for User Entity Instance: blocoOperativo:bloco_Operativo|registrador:PC
+ 39. altsyncram Parameter Settings by Entity Instance
+ 40. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i"
+ 41. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i"
+ 42. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i"
+ 43. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i"
+ 44. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:RDM"
+ 45. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:A"
+ 46. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:B"
+ 47. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB"
+ 48. Port Connectivity Checks: "blocoOperativo:bloco_Operativo|registrador:ULAsaida"
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -82,13 +81,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 12 16:13:34 2015           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 20 20:01:21 2015           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mips                                            ;
 ; Top-level Entity Name              ; mipsMulticiclo                                  ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2,856                                           ;
-;     Total combinational functions  ; 1,796                                           ;
+; Total logic elements               ; 2,835                                           ;
+;     Total combinational functions  ; 1,773                                           ;
 ;     Dedicated logic registers      ; 1,226                                           ;
 ; Total registers                    ; 1226                                            ;
 ; Total pins                         ; 34                                              ;
@@ -195,35 +194,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
-; vhdl/ula.vhd                     ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/ula.vhd                                          ;         ;
-; vhdl/registrador.vhd             ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/registrador.vhd                                  ;         ;
-; vhdl/operacaoULA.vhd             ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/operacaoULA.vhd                                  ;         ;
-; vhdl/multiplexador4x1.vhd        ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/multiplexador4x1.vhd                             ;         ;
-; vhdl/multiplexador2x1.vhd        ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/multiplexador2x1.vhd                             ;         ;
-; vhdl/mipsMulticiclo.vhd          ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/mipsMulticiclo.vhd                               ;         ;
-; vhdl/memoria.vhd                 ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/memoria.vhd                                      ;         ;
-; vhdl/extensaoSinal.vhd           ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/extensaoSinal.vhd                                ;         ;
-; vhdl/deslocadorEsquerda.vhd      ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/deslocadorEsquerda.vhd                           ;         ;
-; vhdl/blocoOperativo.vhd          ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/blocoOperativo.vhd                               ;         ;
-; vhdl/blocoControle.vhd           ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/blocoControle.vhd                                ;         ;
-; vhdl/bancoRegistradores.vhd      ; yes             ; User VHDL File               ; /home/evandro/workspace/mips/vhdl/bancoRegistradores.vhd                           ;         ;
-; vhdl/memoriaFPGA.vhd             ; yes             ; User Wizard-Generated File   ; /home/evandro/workspace/mips/vhdl/memoriaFPGA.vhd                                  ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; /home/evandro/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_hua1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/evandro/workspace/mips/db/altsyncram_hua1.tdf                                ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; vhdl/ula.vhd                     ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/ula.vhd                                          ;         ;
+; vhdl/registrador.vhd             ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/registrador.vhd                                  ;         ;
+; vhdl/operacaoULA.vhd             ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/operacaoULA.vhd                                  ;         ;
+; vhdl/multiplexador4x1.vhd        ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/multiplexador4x1.vhd                             ;         ;
+; vhdl/multiplexador2x1.vhd        ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/multiplexador2x1.vhd                             ;         ;
+; vhdl/mipsMulticiclo.vhd          ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/mipsMulticiclo.vhd                               ;         ;
+; vhdl/memoria.vhd                 ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/memoria.vhd                                      ;         ;
+; vhdl/extensaoSinal.vhd           ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/extensaoSinal.vhd                                ;         ;
+; vhdl/deslocadorEsquerda.vhd      ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/deslocadorEsquerda.vhd                           ;         ;
+; vhdl/blocoOperativo.vhd          ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/blocoOperativo.vhd                               ;         ;
+; vhdl/blocoControle.vhd           ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/blocoControle.vhd                                ;         ;
+; vhdl/bancoRegistradores.vhd      ; yes             ; User VHDL File               ; /home/stark/workspace/mips/vhdl/bancoRegistradores.vhd                           ;         ;
+; vhdl/memoriaFPGA.vhd             ; yes             ; User Wizard-Generated File   ; /home/stark/workspace/mips/vhdl/memoriaFPGA.vhd                                  ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; /home/stark/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_hua1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/stark/workspace/mips/db/altsyncram_hua1.tdf                                ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -231,16 +230,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimated Total logic elements              ; 2,856  ;
+; Estimated Total logic elements              ; 2,835  ;
 ;                                             ;        ;
-; Total combinational functions               ; 1796   ;
+; Total combinational functions               ; 1773   ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 1424   ;
-;     -- 3 input functions                    ; 323    ;
-;     -- <=2 input functions                  ; 49     ;
+;     -- 4 input functions                    ; 1413   ;
+;     -- 3 input functions                    ; 319    ;
+;     -- <=2 input functions                  ; 41     ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 1733   ;
+;     -- normal mode                          ; 1710   ;
 ;     -- arithmetic mode                      ; 63     ;
 ;                                             ;        ;
 ; Total registers                             ; 1226   ;
@@ -252,8 +251,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0      ;
 ; Maximum fan-out node                        ; clock  ;
 ; Maximum fan-out                             ; 1258   ;
-; Total fan-out                               ; 12058  ;
-; Average fan-out                             ; 3.90   ;
+; Total fan-out                               ; 11991  ;
+; Average fan-out                             ; 3.91   ;
 +---------------------------------------------+--------+
 
 
@@ -262,9 +261,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |mipsMulticiclo                                 ; 1796 (1)          ; 1226 (0)     ; 131072      ; 0            ; 0       ; 0         ; 34   ; 0            ; |mipsMulticiclo                                                                                                                                              ; work         ;
-;    |blocoControle:bloco_Controle|               ; 32 (32)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoControle:bloco_Controle                                                                                                                 ; work         ;
-;    |blocoOperativo:bloco_Operativo|             ; 1763 (23)         ; 1216 (0)     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo                                                                                                               ; work         ;
+; |mipsMulticiclo                                 ; 1773 (1)          ; 1226 (0)     ; 131072      ; 0            ; 0       ; 0         ; 34   ; 0            ; |mipsMulticiclo                                                                                                                                              ; work         ;
+;    |blocoControle:bloco_Controle|               ; 14 (14)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoControle:bloco_Controle                                                                                                                 ; work         ;
+;    |blocoOperativo:bloco_Operativo|             ; 1758 (23)         ; 1216 (0)     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo                                                                                                               ; work         ;
 ;       |bancoRegistradores:REG|                  ; 1388 (1388)       ; 1024 (1024)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|bancoRegistradores:REG                                                                                        ; work         ;
 ;       |memoria:Mem|                             ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem                                                                                                   ; work         ;
 ;          |memoriaFPGA:\memoria_1:0:memoria_i|   ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i                                                                ; work         ;
@@ -283,12 +282,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |multiplexador2x1:MUX2|                   ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador2x1:MUX2                                                                                         ; work         ;
 ;       |multiplexador2x1:MUXA|                   ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador2x1:MUXA                                                                                         ; work         ;
 ;       |multiplexador2x1:MUXPC|                  ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador2x1:MUXPC                                                                                        ; work         ;
-;       |multiplexador4x1:MUX3|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3                                                                                         ; work         ;
-;       |multiplexador4x1:MUXB|                   ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB                                                                                         ; work         ;
+;       |multiplexador4x1:MUX3|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3                                                                                         ; work         ;
+;       |multiplexador4x1:MUXB|                   ; 53 (53)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB                                                                                         ; work         ;
 ;       |operacaoULA:operacao_ULA|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|operacaoULA:operacao_ULA                                                                                      ; work         ;
 ;       |registrador:A|                           ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:A                                                                                                 ; work         ;
 ;       |registrador:B|                           ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:B                                                                                                 ; work         ;
-;       |registrador:PC|                          ; 53 (53)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:PC                                                                                                ; work         ;
+;       |registrador:PC|                          ; 54 (54)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:PC                                                                                                ; work         ;
 ;       |registrador:RDM|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:RDM                                                                                               ; work         ;
 ;       |registrador:RI|                          ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:RI                                                                                                ; work         ;
 ;       |registrador:ULAsaida|                    ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:ULAsaida                                                                                          ; work         ;
@@ -309,16 +308,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                             ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------+---------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                               ; IP Include File                                   ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------+---------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i ; /home/evandro/workspace/mips/vhdl/memoriaFPGA.vhd ;
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i ; /home/evandro/workspace/mips/vhdl/memoriaFPGA.vhd ;
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i ; /home/evandro/workspace/mips/vhdl/memoriaFPGA.vhd ;
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i ; /home/evandro/workspace/mips/vhdl/memoriaFPGA.vhd ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------+---------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                           ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                               ; IP Include File                                 ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i ; /home/stark/workspace/mips/vhdl/memoriaFPGA.vhd ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i ; /home/stark/workspace/mips/vhdl/memoriaFPGA.vhd ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i ; /home/stark/workspace/mips/vhdl/memoriaFPGA.vhd ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i ; /home/stark/workspace/mips/vhdl/memoriaFPGA.vhd ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------------------------+-------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -340,26 +339,6 @@ Encoding Type:  One-Hot
 +-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                    ;
-+-----------------------------------------------------+-----------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                     ; Free of Timing Hazards ;
-+-----------------------------------------------------+-----------------------------------------+------------------------+
-; blocoControle:bloco_Controle|next_state.s5_290      ; blocoControle:bloco_Controle|Selector10 ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s3_320      ; blocoControle:bloco_Controle|Selector10 ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s8_248      ; GND                                     ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s6_275      ; GND                                     ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s0_362      ; blocoControle:bloco_Controle|Selector10 ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s1_347      ; blocoControle:bloco_Controle|Selector10 ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s2_332      ; GND                                     ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s9_236      ; GND                                     ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s4_305      ; blocoControle:bloco_Controle|Selector10 ; yes                    ;
-; blocoControle:bloco_Controle|next_state.s7_263      ; blocoControle:bloco_Controle|Selector10 ; yes                    ;
-; Number of user-specified and inferred latches = 10  ;                                         ;                        ;
-+-----------------------------------------------------+-----------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
@@ -367,7 +346,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Total registers                              ; 1226  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 30    ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 1226  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1088  ;
@@ -380,16 +359,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:PC|actual_state[26] ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:PC|actual_state[31] ;
-; 3:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:PC|actual_state[13] ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:B|actual_state[5]   ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:A|actual_state[7]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |mipsMulticiclo|blocoControle:bloco_Controle|next_state.s9                     ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|ula:ULA1|saida[24]              ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB|saida[17] ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:PC|actual_state[5]  ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:B|actual_state[10]  ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|registrador:A|actual_state[12]  ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|ula:ULA1|saida[7]               ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; No         ; |mipsMulticiclo|blocoControle:bloco_Controle|next_state                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB|saida[0]  ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB|saida[2]  ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoOperativo:bloco_Operativo|multiplexador4x1:MUXB|saida[2]  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mipsMulticiclo|blocoControle:bloco_Controle|next_state.s6                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
@@ -1011,7 +989,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 12 16:13:28 2015
+    Info: Processing started: Fri Nov 20 20:01:16 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file vhdl/ula.vhd
@@ -1059,18 +1037,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file vhdl/me
 Info (12127): Elaborating entity "mipsMulticiclo" for the top level hierarchy
 Info (12128): Elaborating entity "blocoControle" for hierarchy "blocoControle:bloco_Controle"
 Warning (10492): VHDL Process Statement warning at blocoControle.vhd(52): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at blocoControle.vhd(50): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
-Warning (10492): VHDL Process Statement warning at blocoControle.vhd(103): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (10041): Inferred latch for "next_state.s9" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s8" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s7" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s6" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s5" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s4" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s3" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s2" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s1" at blocoControle.vhd(50)
-Info (10041): Inferred latch for "next_state.s0" at blocoControle.vhd(50)
+Warning (10492): VHDL Process Statement warning at blocoControle.vhd(53): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at blocoControle.vhd(104): signal "actual_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "blocoOperativo" for hierarchy "blocoOperativo:bloco_Operativo"
 Info (12128): Elaborating entity "multiplexador4x1" for hierarchy "blocoOperativo:bloco_Operativo|multiplexador4x1:MUX3"
 Info (12128): Elaborating entity "registrador" for hierarchy "blocoOperativo:bloco_Operativo|registrador:ULAsaida"
@@ -1138,10 +1106,6 @@ Warning (13034): The following nodes have both tri-state and non-tri-state drive
     Warning (13035): Inserted always-enabled tri-state buffer between "gpio[29]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "gpio[30]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "gpio[31]" and its non-tri-state driver.
-Warning (13012): Latch blocoControle:bloco_Controle|next_state.s5_290 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal blocoOperativo:bloco_Operativo|registrador:RI|actual_state[31]
-Warning (13012): Latch blocoControle:bloco_Controle|next_state.s3_320 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal blocoOperativo:bloco_Operativo|registrador:RI|actual_state[31]
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "gpio[0]~synth"
     Warning (13010): Node "gpio[1]~synth"
@@ -1177,16 +1141,16 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "gpio[31]~synth"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2972 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2944 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
     Info (21060): Implemented 32 bidirectional pins
-    Info (21061): Implemented 2906 logic cells
+    Info (21061): Implemented 2878 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 76 warnings
-    Info: Peak virtual memory: 382 megabytes
-    Info: Processing ended: Thu Nov 12 16:13:34 2015
-    Info: Elapsed time: 00:00:06
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info: Peak virtual memory: 387 megabytes
+    Info: Processing ended: Fri Nov 20 20:01:21 2015
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:06
 
 

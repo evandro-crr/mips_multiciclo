@@ -49,6 +49,7 @@ begin
 	
 	process(opcode,clock)
 	begin
+		next_state <= actual_state;
 		case actual_state is
 			when s0 => 
 				next_state <= s1;

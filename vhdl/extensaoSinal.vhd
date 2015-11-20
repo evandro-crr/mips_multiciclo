@@ -33,5 +33,5 @@ end entity;
 architecture comportamental of extensaoSinal is
 	begin
 	saida(larguraOriginal-1 downto 0) <= entrada;
-	saida(larguraExtendida-1 downto larguraOriginal) <= (others => '0');
+	saida(larguraExtendida-1 downto larguraOriginal) <= (others => '0') when entrada(larguraOriginal-1) = '0' else (others => '1');
 end architecture;
