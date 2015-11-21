@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="mips">
-		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hua1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hua1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hua1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hua1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:0:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gmd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:1:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gmd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:2:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gmd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mipsMulticiclo|blocoOperativo:bloco_Operativo|memoria:Mem|memoriaFPGA:\memoria_1:3:memoria_i|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gmd1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

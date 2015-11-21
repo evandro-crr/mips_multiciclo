@@ -126,11 +126,10 @@ component operacaoULA is
 end component;
 	signal cPC, zero : std_logic;
 	signal sU, D, m2, I, sMem, mPC, sB, sPC, m3, dA, dB, sA, es, esd, mA, mB, ej, resultado : std_logic_vector(31 downto 0);
-	signal ej2 : std_logic_vector(27 downto 0);
 	signal m1 : std_logic_vector(4 downto 0);
 	signal cULA : std_logic_vector(2 downto 0);
 begin
-	saidaMemoria <= sMem;
+	saidaMemoria <= sPC;
 	opcode <= I(31 downto 26);
 	MUX3: multiplexador4x1 	generic map (32)
 									port map(resultado, sU, ej, ej, FontePC, m3);
@@ -141,9 +140,7 @@ begin
 	ULA1: ula 	generic map (32)
 					port map (mA, mB, cULA, resultado, zero);
 	ej(31 downto 28) <= sPC(31 downto 28);
-	ej(27 downto 0) <= ej2;
-	Extensao_SinalPC: ExtensaoSinal 	generic map (26,28)
-												port map (I(25 downto 0), ej2);
+	ej(27 downto 0) <= I(25 downto 0) & "00";	
 	MUXB: multiplexador4x1 	generic map (32)
 									port map (sB, std_logic_vector(to_unsigned(4,sB'length)), es, esd, ULAFonteB, mB);
 	MUXA: multiplexador2x1 	generic map(32)

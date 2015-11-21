@@ -1,0 +1,237 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/stark/workspace/mips/simulation/modelsim
+Ememoria
+Z1 w1448041849
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/stark/workspace/mips/simulation/modelsim
+8/home/stark/workspace/mips/vhdl/memoria.vhd
+F/home/stark/workspace/mips/vhdl/memoria.vhd
+l0
+L24
+V9eoF34ehA_z>lV[1Ef5WB0
+!s100 OGYnSK5Ja]QN2bM<9lkZR3
+Z6 OV;C;10.1d;51
+31
+!i10b 1
+!s108 1448067141.538055
+!s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/memoria.vhd|
+!s107 /home/stark/workspace/mips/vhdl/memoria.vhd|
+Z7 o-93 -work work -O0
+Z8 tExplicit 1
+Emipsmulticiclo
+R1
+R3
+R4
+R5
+Z9 8/home/stark/workspace/mips/vhdl/mipsMulticiclo.vhd
+Z10 F/home/stark/workspace/mips/vhdl/mipsMulticiclo.vhd
+l0
+L23
+VlBkl=1aBg00D;4?DLkzP`3
+R6
+31
+Z11 !s108 1448067141.500645
+Z12 !s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/mipsMulticiclo.vhd|
+Z13 !s107 /home/stark/workspace/mips/vhdl/mipsMulticiclo.vhd|
+R7
+R8
+!s100 ]Z9E_gfXT7Kn2O<nlIG5N2
+!i10b 1
+Aestrutural
+R3
+R4
+DEx4 work 14 mipsmulticiclo 0 22 lBkl=1aBg00D;4?DLkzP`3
+l52
+L30
+Vl>kEW6=2_6fH5OTf:UbcC2
+R6
+31
+R11
+R12
+R13
+R7
+R8
+!s100 C=2RdoQ;cDiX[[Ud_JG>L2
+!i10b 1
+Emultiplexador2x1
+R1
+R3
+R4
+R5
+Z14 8/home/stark/workspace/mips/vhdl/multiplexador2x1.vhd
+Z15 F/home/stark/workspace/mips/vhdl/multiplexador2x1.vhd
+l0
+L24
+V2XK4e0Ph>J0T25`Oc9OCL1
+R6
+31
+Z16 !s108 1448067141.477545
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/multiplexador2x1.vhd|
+Z18 !s107 /home/stark/workspace/mips/vhdl/multiplexador2x1.vhd|
+R7
+R8
+!s100 oj=S`7k>>W`G[LPDdWNTR1
+!i10b 1
+Acomportamental
+R3
+R4
+DEx4 work 16 multiplexador2x1 0 22 2XK4e0Ph>J0T25`Oc9OCL1
+l34
+L33
+V=f``j4[5_:LzRlA?B<h9A1
+R6
+31
+R16
+R17
+R18
+R7
+R8
+!s100 cHW@OBKSR1]=beDTeWd^k0
+!i10b 1
+Emultiplexador4x1
+R1
+R3
+R4
+R5
+Z19 8/home/stark/workspace/mips/vhdl/multiplexador4x1.vhd
+Z20 F/home/stark/workspace/mips/vhdl/multiplexador4x1.vhd
+l0
+L24
+V=7bdcbJOD<j4Da1_1EaZV1
+R6
+31
+Z21 !s108 1448067141.454739
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/multiplexador4x1.vhd|
+Z23 !s107 /home/stark/workspace/mips/vhdl/multiplexador4x1.vhd|
+R7
+R8
+!s100 cD3A=5?WdGd5<E4SN4U=O1
+!i10b 1
+Acomportamental
+R3
+R4
+DEx4 work 16 multiplexador4x1 0 22 =7bdcbJOD<j4Da1_1EaZV1
+l34
+L33
+Ve7JJmj7fAO1JleDb>b[cl2
+R6
+31
+R21
+R22
+R23
+R7
+R8
+!s100 6D=6kBneNc4KMZGVCF^if0
+!i10b 1
+Eoperacaoula
+R1
+R3
+R4
+R5
+Z24 8/home/stark/workspace/mips/vhdl/operacaoULA.vhd
+Z25 F/home/stark/workspace/mips/vhdl/operacaoULA.vhd
+l0
+L23
+V75E1SNeI2l:eN]h9X1V6z3
+R6
+31
+Z26 !s108 1448067141.431807
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/operacaoULA.vhd|
+Z28 !s107 /home/stark/workspace/mips/vhdl/operacaoULA.vhd|
+R7
+R8
+!s100 S;`2l^5h@3l8kA9nl>NkL0
+!i10b 1
+Acomportamental
+R3
+R4
+DEx4 work 11 operacaoula 0 22 75E1SNeI2l:eN]h9X1V6z3
+l32
+L31
+VO^TFn:A^lVnXJa1Y@^:Xc3
+R6
+31
+R26
+R27
+R28
+R7
+R8
+!s100 14<g2S^3dBMBo?4QMM@I@1
+!i10b 1
+Eregistrador
+R1
+R3
+R4
+R5
+Z29 8/home/stark/workspace/mips/vhdl/registrador.vhd
+Z30 F/home/stark/workspace/mips/vhdl/registrador.vhd
+l0
+L23
+V[hKan5k:lz`6TM84WQmQR0
+R6
+31
+Z31 !s108 1448067141.408550
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/registrador.vhd|
+Z33 !s107 /home/stark/workspace/mips/vhdl/registrador.vhd|
+R7
+R8
+!s100 7UMm;ZoQJ@>D>4RHfF?N61
+!i10b 1
+Acomportamental
+R3
+R4
+DEx4 work 11 registrador 0 22 [hKan5k:lz`6TM84WQmQR0
+l35
+L33
+Vd4nicdD7_HjANm`RV=SPD3
+R6
+31
+R31
+R32
+R33
+R7
+R8
+!s100 docYTJ4N;PWIEIcQG3n:?2
+!i10b 1
+Eula
+R1
+R2
+R3
+R4
+R5
+Z34 8/home/stark/workspace/mips/vhdl/ula.vhd
+Z35 F/home/stark/workspace/mips/vhdl/ula.vhd
+l0
+L24
+V2mj6n1eaVo70gH?TeZXmJ0
+R6
+31
+Z36 !s108 1448067141.346078
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/stark/workspace/mips/vhdl/ula.vhd|
+Z38 !s107 /home/stark/workspace/mips/vhdl/ula.vhd|
+R7
+R8
+!s100 U<mab1VVb5Aj_`dSJ6jOW3
+!i10b 1
+Acomportamental
+R2
+R3
+R4
+DEx4 work 3 ula 0 22 2mj6n1eaVo70gH?TeZXmJ0
+l36
+L34
+Vm]CjhMllaPz3;ej1z0F[:0
+R6
+31
+R36
+R37
+R38
+R7
+R8
+!s100 >M=4idAkKa4d7hIg^XPzf0
+!i10b 1
