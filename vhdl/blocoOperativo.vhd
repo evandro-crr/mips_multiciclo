@@ -27,7 +27,7 @@ entity blocoOperativo is
       PCEscCond, PCEsc, IouD, LerMem, EscMem, MemParaReg, IREsc, RegDst, EscReg, ULAFonteA: in std_logic;
       ULAFonteB, ULAOp, FontePC: in std_logic_vector(1 downto 0);
 		opcode: out std_logic_vector(5 downto 0);
-		saidaMemoria: out std_logic_vector(31 downto 0)
+		gpio: out std_logic_vector(31 downto 0)
    );
 end entity;
 
@@ -129,7 +129,7 @@ end component;
 	signal m1 : std_logic_vector(4 downto 0);
 	signal cULA : std_logic_vector(2 downto 0);
 begin
-	saidaMemoria <= sPC;
+	gpio <= I;
 	opcode <= I(31 downto 26);
 	MUX3: multiplexador4x1 	generic map (32)
 									port map(resultado, sU, ej, ej, FontePC, m3);

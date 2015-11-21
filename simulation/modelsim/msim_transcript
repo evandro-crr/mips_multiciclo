@@ -21,8 +21,8 @@
 # -- Compiling entity mipsMulticiclo
 # -- Compiling architecture structure of mipsMulticiclo
 # 
-vsim -voptargs=+acc work.mipsmulticiclo
-# vsim -voptargs=+acc work.mipsmulticiclo 
+vsim work.mipsmulticiclo
+# vsim work.mipsmulticiclo 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -31,9 +31,9 @@ vsim -voptargs=+acc work.mipsmulticiclo
 # Loading cycloneii.cycloneii_atom_pack(body)
 # Loading cycloneii.cycloneii_components
 # Loading work.mipsmulticiclo(structure)
-# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
 # Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
 # Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneii.cycloneii_io(structure)
 # Loading cycloneii.cycloneii_mux21(altvital)
@@ -47,3 +47,50 @@ vsim -voptargs=+acc work.mipsmulticiclo
 # ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim Altera version. Expect performance to be adversely affected.
+add wave -position insertpoint  \
+sim:/mipsmulticiclo/clock \
+sim:/mipsmulticiclo/reset \
+sim:/mipsmulticiclo/gpio
+force -freeze sim:/mipsmulticiclo/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mipsmulticiclo/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
